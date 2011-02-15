@@ -47,25 +47,21 @@ map <F6> :b#<CR>
 map <C-n> :noh<CR>
 map <C-Space> <C-x><C-o>
 
-" Taglist stuff
-nmap ,tu :!(ctags *.[ch])&<CR><CR>
-map ,tl :TlistToggle<CR>
-let Tlist_Exit_OnlyWindow = 1
-
 " Colorscheme bullshittery:
 set t_Co=16
 set background=dark
 colors zenburn
 
 " latex build + evince ps view
-nmap ,tex :!(texbuildps.py %)<CR><CR>
+"nmap <leader>tex :!(texbuildps.py %)<CR><CR>
 
 " Gundo settings
-nnoremap <F5> :GundoToggle<CR>
+nnoremap <leader>g :GundoToggle<CR>
 
 " NERDTree settings
 let g:NERDTreeChDirMode=2
 let g:NERDChristmasTree=1
+nmap <leader>t :NERDTreeToggle<CR>
 
 " Stupid NERDCommenter warning
 let NERDShutUp=1
