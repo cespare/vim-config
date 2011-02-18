@@ -28,3 +28,9 @@
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = https://github.com/tpope/vim-markdown.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = https://github.com/tsaleh/vim-matchit.git
+[submodule "bundle/ruby-matchit"]
+	path = bundle/ruby-matchit
+	url = https://github.com/vim-scripts/ruby-matchit.git
