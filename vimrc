@@ -93,6 +93,9 @@ command DeleteTrailingWhitespace %s:\(\S*\)\s\+$:\1:
 " man pages from within vim anyway.)
 :map K <Nop>
 
+" Preview the current markdown file:
+:map <leader>m :%w ! markdown_doctor \| bcat<CR><CR>
+
 " TODO: move all the language-specific settings to ftplugins
 
 " Nice ruby settings
