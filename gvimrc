@@ -8,3 +8,6 @@ hi ColorColumn guibg=#4E4E4E
 
 " My favorite coding font
 set guifont=DroidSansMonoSlashed:h12
+
+" Get rid of the macvim toolbar
+set go-=T
