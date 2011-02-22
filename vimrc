@@ -96,6 +96,9 @@ command DeleteTrailingWhitespace %s:\(\S*\)\s\+$:\1:
 " Preview the current markdown file:
 :map <leader>m :%w ! markdown_doctor \| bcat<CR><CR>
 
+" Close a buffer without messing with the windows (vim-bclose)
+nmap <leader>q <Plug>Kwbd
+
 " TODO: move all the language-specific settings to ftplugins
 
 " Nice ruby settings
@@ -112,26 +115,3 @@ augroup markdown
   au!
   au FileType markdown set comments=b:*,b:-,b:+,n:>h
 augroup END
-
-" Better buffer close functionality =======================
-nmap ,fc :call CleanClose(1)<CR>
-nmap ,fq :call CleanClose(0)<CR>
-
-function! CleanClose(tosave)
-  if (a:tosave == 1)
-    w!
-  endif
-let todelbufNr = bufnr("%")
-let newbufNr = bufnr("#")
-if ((newbufNr != -1) && (newbufNr != todelbufNr) && buflisted(newbufNr))
-    exe "b".newbufNr
-else
-    bnext
-endif
-
-if (bufnr("%") == todelbufNr)
-    new
-endif
-exe "bd".todelbufNr
-endfunction
-" ===================================================

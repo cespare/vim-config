@@ -34,3 +34,6 @@
 [submodule "bundle/ruby-matchit"]
 	path = bundle/ruby-matchit
 	url = https://github.com/vim-scripts/ruby-matchit.git
+[submodule "bundle/bclose"]
+	path = bundle/bclose
+	url = git@github.com:cespare/vim-bclose.git
