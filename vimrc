@@ -81,7 +81,7 @@ set vb t_vb=
 " Show extra whitespace
 highlight ExtraWhitespace ctermbg=green guibg=green
 match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
@@ -98,6 +98,9 @@ command DeleteTrailingWhitespace %s:\(\S*\)\s\+$:\1:
 
 " Close a buffer without messing with the windows (vim-bclose)
 nmap <leader>q <Plug>Kwbd
+
+" Macvim default clipboard interaction is bullshit
+set clipboard=unnamed
 
 " TODO: move all the language-specific settings to ftplugins
 
