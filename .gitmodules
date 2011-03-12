@@ -37,3 +37,6 @@
 [submodule "bundle/bclose"]
 	path = bundle/bclose
 	url = git@github.com:cespare/vim-bclose.git
+[submodule "bundle/actionscript-syntax"]
+	path = bundle/actionscript-syntax
+	url = https://github.com/vim-scripts/actionscript.vim--Cuss.git
