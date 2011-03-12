@@ -1,12 +1,12 @@
 " Vim syntax file
-" Language:	MXML
-" Maintainer:	Abdul Qabiz <mail@abdulqabiz.com>
-" URL:		http://www.abdulqabiz.com/files/vim/mxml.vim
-"		Author and previous maintainer:
-"		Johannes Zellner <johannes@zellner.org>
-"		Paul Siegmann <pauls@euronet.nl>
-" Last Change:	Mi, 20 Jun 2006 14:40:09 IST
-" Filenames:	*.mxml
+" Language: MXML
+" Maintainer: Abdul Qabiz <mail@abdulqabiz.com>
+" URL:    http://www.abdulqabiz.com/files/vim/mxml.vim
+"   Author and previous maintainer:
+"   Johannes Zellner <johannes@zellner.org>
+"   Paul Siegmann <pauls@euronet.nl>
+" Last Change:  Mi, 20 Jun 2006 14:40:09 IST
+" Filenames:  *.mxml
 " $Id: mxml.vim,v 1.0 2006/06/20 14:51:26 aqabiz Exp $
 
 " CONFIGURATION:
@@ -155,10 +155,10 @@ if exists('g:mxml_syntax_folding')
     " s^^^^^^^^^^^^^^^e
     "
     syn region   xmlTag
-	\ matchgroup=xmlTag start=+<[^ /!?<>"']\@=+
-	\ matchgroup=xmlTag end=+>+
-	\ contained
-	\ contains=xmlError,xmlTagName,xmlAttrib,xmlEqual,xmlString,@xmlStartTagHook
+  \ matchgroup=xmlTag start=+<[^ /!?<>"']\@=+
+  \ matchgroup=xmlTag end=+>+
+  \ contained
+  \ contains=xmlError,xmlTagName,xmlAttrib,xmlEqual,xmlString,@xmlStartTagHook
 
 
     " highlight the end tag
@@ -172,9 +172,9 @@ if exists('g:mxml_syntax_folding')
     " ^^^^^^
     "
     syn match   xmlEndTag
-	\ +</[^ /!?<>"']\+>+
-	\ contained
-	\ contains=xmlNamespace,xmlAttribPunct,@xmlTagHook
+  \ +</[^ /!?<>"']\+>+
+  \ contained
+  \ contains=xmlNamespace,xmlAttribPunct,@xmlTagHook
 
 
     " tag elements with syntax-folding.
@@ -192,14 +192,14 @@ if exists('g:mxml_syntax_folding')
     " </tag>
     "
     syn region   xmlRegion
-	\ start=+<\z([^ /!?<>"']\+\)+
-	\ skip=+<!--\_.\{-}-->+
-	\ end=+</\z1\_\s\{-}>+
-	\ matchgroup=xmlEndTag end=+/>+
-	\ fold
-	\ contains=xmlTag,xmlEndTag,xmlCdata,xmlRegion,xmlComment,xmlEntity,xmlProcessing,@xmlRegionHook
-	\ keepend
-	\ extend
+  \ start=+<\z([^ /!?<>"']\+\)+
+  \ skip=+<!--\_.\{-}-->+
+  \ end=+</\z1\_\s\{-}>+
+  \ matchgroup=xmlEndTag end=+/>+
+  \ fold
+  \ contains=xmlTag,xmlEndTag,xmlCdata,xmlRegion,xmlComment,xmlEntity,xmlProcessing,@xmlRegionHook
+  \ keepend
+  \ extend
 
 else
 
@@ -208,13 +208,13 @@ else
     " - xmlRegion not defined
     "
     syn region   xmlTag
-	\ matchgroup=xmlTag start=+<[^ /!?<>"']\@=+
-	\ matchgroup=xmlTag end=+>+
-	\ contains=xmlError,xmlTagName,xmlAttrib,xmlEqual,xmlString,@xmlStartTagHook
+  \ matchgroup=xmlTag start=+<[^ /!?<>"']\@=+
+  \ matchgroup=xmlTag end=+>+
+  \ contains=xmlError,xmlTagName,xmlAttrib,xmlEqual,xmlString,@xmlStartTagHook
 
     syn match   xmlEndTag
-	\ +</[^ /!?<>"']\+>+
-	\ contains=xmlNamespace,xmlAttribPunct,@xmlTagHook
+  \ +</[^ /!?<>"']\+>+
+  \ contains=xmlNamespace,xmlAttribPunct,@xmlTagHook
 
 endif
 
@@ -228,11 +228,11 @@ if exists('g:mxml_syntax_folding')
     " The real comments (this implements the comments as defined by xml,
     " but not all xml pages actually conform to it. Errors are flagged.
     syn region  xmlComment
-	\ start=+<!+
-	\ end=+>+
-	\ contains=xmlCommentPart,xmlCommentError
-	\ extend
-	\ fold
+  \ start=+<!+
+  \ end=+>+
+  \ contains=xmlCommentPart,xmlCommentError
+  \ extend
+  \ fold
 
 else
 
@@ -240,10 +240,10 @@ else
     " - fold attribute removed
     "
     syn region  xmlComment
-	\ start=+<!+
-	\ end=+>+
-	\ contains=xmlCommentPart,xmlCommentError
-	\ extend
+  \ start=+<!+
+  \ end=+>+
+  \ contains=xmlCommentPart,xmlCommentError
+  \ extend
 
 endif
 
@@ -283,17 +283,17 @@ if exists('g:mxml_syntax_folding')
 
     " DTD -- we use dtd.vim here
     syn region  xmlDocType matchgroup=xmlDocTypeDecl
-	\ start="<!DOCTYPE"he=s+2,rs=s+2 end=">"
-	\ fold
-	\ contains=xmlDocTypeKeyword,xmlInlineDTD,xmlString
+  \ start="<!DOCTYPE"he=s+2,rs=s+2 end=">"
+  \ fold
+  \ contains=xmlDocTypeKeyword,xmlInlineDTD,xmlString
 else
 
     " no syntax folding:
     " - fold attribute removed
     "
     syn region  xmlDocType matchgroup=xmlDocTypeDecl
-	\ start="<!DOCTYPE"he=s+2,rs=s+2 end=">"
-	\ contains=xmlDocTypeKeyword,xmlInlineDTD,xmlString
+  \ start="<!DOCTYPE"he=s+2,rs=s+2 end=">"
+  \ contains=xmlDocTypeKeyword,xmlInlineDTD,xmlString
 
 endif
 
@@ -346,38 +346,38 @@ if main_syntax == "mxml"
 endif
 
 " The default highlighting.
-MXMLHiLink xmlTodo		Todo
-MXMLHiLink xmlTag		Function
-MXMLHiLink xmlTagName		Function
-MXMLHiLink xmlEndTag		Identifier
+MXMLHiLink xmlTodo    Todo
+MXMLHiLink xmlTag   Function
+MXMLHiLink xmlTagName   Function
+MXMLHiLink xmlEndTag    Identifier
 if !exists("g:mxml_namespace_transparent")
-    MXMLHiLink xmlNamespace	Tag
+    MXMLHiLink xmlNamespace Tag
 endif
-MXMLHiLink xmlEntity		Statement
-MXMLHiLink xmlEntityPunct	Type
+MXMLHiLink xmlEntity    Statement
+MXMLHiLink xmlEntityPunct Type
 
-MXMLHiLink xmlAttribPunct	Comment
-MXMLHiLink xmlAttrib		Type
+MXMLHiLink xmlAttribPunct Comment
+MXMLHiLink xmlAttrib    Type
 
-MXMLHiLink xmlString		String
-MXMLHiLink xmlComment		Comment
-MXMLHiLink xmlCommentPart	Comment
-MXMLHiLink xmlCommentError	Error
-MXMLHiLink xmlError		Error
+MXMLHiLink xmlString    String
+MXMLHiLink xmlComment   Comment
+MXMLHiLink xmlCommentPart Comment
+MXMLHiLink xmlCommentError  Error
+MXMLHiLink xmlError   Error
 
-MXMLHiLink xmlProcessingDelim	Comment
-MXMLHiLink xmlProcessing	Type
+MXMLHiLink xmlProcessingDelim Comment
+MXMLHiLink xmlProcessing  Type
 
-MXMLHiLink xmlCdata		String
-MXMLHiLink xmlCdataCdata	Statement
-MXMLHiLink xmlCdataStart	Type
-MXMLHiLink xmlCdataEnd		Type
+MXMLHiLink xmlCdata   String
+MXMLHiLink xmlCdataCdata  Statement
+MXMLHiLink xmlCdataStart  Type
+MXMLHiLink xmlCdataEnd    Type
 
-MXMLHiLink xmlDocTypeDecl	Function
-MXMLHiLink xmlDocTypeKeyword	Statement
-MXMLHiLink xmlInlineDTD	Function
-MXMLHiLink Script		Special
-MXMLHiLink actionScriptExpression Script 		
+MXMLHiLink xmlDocTypeDecl Function
+MXMLHiLink xmlDocTypeKeyword  Statement
+MXMLHiLink xmlInlineDTD Function
+MXMLHiLink Script   Special
+MXMLHiLink actionScriptExpression Script    
 MXMLHiLink xmlCssStyleComment    Comment
 MXMLHiLink xmlCssDefinition      Special
 MXMLHiLink mxmlEvent             Script
