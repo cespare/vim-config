@@ -102,6 +102,11 @@ nmap <leader>q <Plug>Kwbd
 " Macvim default clipboard interaction is bullshit
 set clipboard=unnamed
 
+" Change where we store swap/undo files
+set dir=~/.vim/tmp/swap//
+set backupdir=~/.vim/tmp/backup//
+set undodir=~/.vim/tmp/undo/
+
 " TODO: move all the language-specific settings to ftplugins
 
 " Nice ruby settings
