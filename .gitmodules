@@ -40,3 +40,6 @@
 [submodule "bundle/actionscript-syntax"]
 	path = bundle/actionscript-syntax
 	url = https://github.com/vim-scripts/actionscript.vim--Cuss.git
+[submodule "bundle/irblack-theme"]
+	path = bundle/irblack-theme
+	url = https://github.com/wgibbs/vim-irblack.git

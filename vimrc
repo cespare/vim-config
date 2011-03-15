@@ -50,7 +50,7 @@ map <C-Space> <C-x><C-o>
 " Colorscheme bullshittery:
 set t_Co=16
 set background=dark
-colors zenburn
+colors ir_black
 
 " latex build + evince ps view
 "nmap <leader>tex :!(texbuildps.py %)<CR><CR>
