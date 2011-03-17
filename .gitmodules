@@ -43,3 +43,6 @@
 [submodule "bundle/irblack-theme"]
 	path = bundle/irblack-theme
 	url = https://github.com/wgibbs/vim-irblack.git
+[submodule "bundle/align"]
+	path = bundle/align
+	url = https://github.com/tsaleh/vim-align
