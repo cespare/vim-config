@@ -79,7 +79,7 @@ nnoremap <leader>a :Ack
 set vb t_vb=
 
 " Show extra whitespace
-highlight ExtraWhitespace ctermbg=green guibg=green
+highlight ExtraWhitespace ctermbg=white
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/

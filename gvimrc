@@ -9,6 +9,7 @@ colors zenburn
 "set colorcolumn=110
 let &colorcolumn = &wrapmargin
 hi ColorColumn guibg=#4E4E4E
+hi ExtraWhitespace guibg=#CCCCCC
 
 " My favorite coding font
 set guifont=DroidSansMonoSlashed:h12
