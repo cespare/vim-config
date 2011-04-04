@@ -39,6 +39,7 @@ set smartcase
 set undofile
 set backspace=indent,eol,start
 set linespace=3
+set incsearch
 
 let mapleader = ","
 
