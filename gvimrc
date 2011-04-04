@@ -6,8 +6,7 @@ let g:zenburn_high_Contrast=1
 colors zenburn
 " See the theme-tweaks plugin for changes I've made to my theme
 
-" Draw the color column wherever wrapmargin is set
-let &colorcolumn = &wrapmargin
+call ToggleColorColumn()
 
 " My favorite coding font
 set guifont=DroidSansMonoSlashed:h12

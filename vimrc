@@ -107,6 +107,18 @@ set dir=~/.vim/tmp/swap//
 set backupdir=~/.vim/tmp/backup//
 set undodir=~/.vim/tmp/undo/
 
+" Toggle colorcolumn
+function ToggleColorColumn()
+  if &colorcolumn == 0
+    " Draw the color column wherever wrapmargin is set
+    let &colorcolumn = &wrapmargin
+  else
+    let &colorcolumn = 0
+  endif
+endfunction
+command! ToggleColorColumn call ToggleColorColumn()
+:map <leader>l :ToggleColorColumn<CR>
+
 " TODO: move all the language-specific settings to ftplugins
 
 " Nice ruby settings
