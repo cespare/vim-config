@@ -46,3 +46,6 @@
 [submodule "bundle/align"]
 	path = bundle/align
 	url = https://github.com/tsaleh/vim-align
+[submodule "bundle/zenburn-theme"]
+	path = bundle/zenburn-theme
+	url = git://github.com/cespare/zenburn.git
