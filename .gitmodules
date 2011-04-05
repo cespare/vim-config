@@ -49,9 +49,3 @@
 [submodule "bundle/zenburn-theme"]
 	path = bundle/zenburn-theme
 	url = git://github.com/cespare/zenburn.git
-[submodule "bundle/theme-tweaks"]
-	path = bundle/theme-tweaks
-	url = git://github.com/cespare/vim-theme-tweaks.git
-[submodule "bundle/after-colors"]
-	path = bundle/after-colors
-	url = https://github.com/vim-scripts/AfterColors.vim.git

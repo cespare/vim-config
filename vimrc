@@ -53,6 +53,9 @@ set t_Co=16
 set background=dark
 colors ir_black
 
+" Adjust colors as necessary
+hi ColorColumn ctermbg=darkgray
+
 " latex build + evince ps view
 "nmap <leader>tex :!(texbuildps.py %)<CR><CR>
 
