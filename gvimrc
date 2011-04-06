@@ -22,3 +22,6 @@ set guifont=DroidSansMonoSlashed:h12
 
 " Get rid of the macvim toolbar
 set go-=T
+
+" Turn on indent guides
+IndentGuidesToggle

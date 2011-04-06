@@ -49,3 +49,9 @@
 [submodule "bundle/zenburn-theme"]
 	path = bundle/zenburn-theme
 	url = git://github.com/cespare/zenburn.git
+[submodule "bundle/indent-object"]
+	path = bundle/indent-object
+	url = https://github.com/michaeljsmith/vim-indent-object.git
+[submodule "bundle/indent-guides"]
+	path = bundle/indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
