@@ -52,6 +52,3 @@
 [submodule "bundle/indent-object"]
 	path = bundle/indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object.git
-[submodule "bundle/indent-guides"]
-	path = bundle/indent-guides
-	url = https://github.com/nathanaelkane/vim-indent-guides.git
