@@ -58,3 +58,6 @@
 [submodule "bundle/vjde"]
 	path = bundle/vjde
 	url = git@github.com:cespare/vjde.git
+[submodule "bundle/javaimp"]
+	path = bundle/javaimp
+	url = https://github.com/vim-scripts/javaimp.vim.git
