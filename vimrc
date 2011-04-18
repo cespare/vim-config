@@ -40,7 +40,6 @@ set undofile
 set backspace=indent,eol,start
 set linespace=3
 set incsearch
-set relativenumber
 
 let mapleader = ","
 
@@ -67,7 +66,6 @@ nnoremap <leader>g :GundoToggle<CR>
 let g:NERDTreeChDirMode=2
 let g:NERDChristmasTree=1
 nmap <leader>t :NERDTreeToggle<CR>
-autocmd FileType nerdtree setlocal norelativenumber
 
 " Stupid NERDCommenter warning
 let NERDShutUp=1
