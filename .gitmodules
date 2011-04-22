@@ -61,3 +61,6 @@
 [submodule "bundle/javaimp"]
 	path = bundle/javaimp
 	url = https://github.com/vim-scripts/javaimp.vim.git
+[submodule "bundle/r.vim"]
+	path = bundle/r.vim
+	url = git@github.com:cespare/Vim-R-plugin.git
