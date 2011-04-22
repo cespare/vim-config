@@ -67,3 +67,24 @@
 [submodule "bundle/wombat-theme"]
 	path = bundle/wombat-theme
 	url = https://github.com/cschlueter/vim-wombat
+[submodule "bundle/candy-theme"]
+	path = bundle/candy-theme
+	url = https://github.com/vim-scripts/candy.vim.git
+[submodule "bundle/darkspectrum-theme"]
+	path = bundle/darkspectrum-theme
+	url = https://github.com/vim-scripts/darkspectrum.git
+[submodule "bundle/freya-theme"]
+	path = bundle/freya-theme
+	url = https://github.com/vim-scripts/freya.git
+[submodule "bundle/inkpot-theme"]
+	path = bundle/inkpot-theme
+	url = https://github.com/ciaranm/inkpot.git
+[submodule "bundle/jellybeans-theme"]
+	path = bundle/jellybeans-theme
+	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule "bundle/lucius-theme"]
+	path = bundle/lucius-theme
+	url = https://github.com/vim-scripts/Lucius.git
+[submodule "bundle/rootwater-theme"]
+	path = bundle/rootwater-theme
+	url = https://github.com/vim-scripts/rootwater.vim.git
