@@ -64,3 +64,6 @@
 [submodule "bundle/r.vim"]
 	path = bundle/r.vim
 	url = git@github.com:cespare/Vim-R-plugin.git
+[submodule "bundle/wombat-theme"]
+	path = bundle/wombat-theme
+	url = https://github.com/cschlueter/vim-wombat
