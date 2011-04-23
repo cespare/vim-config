@@ -82,6 +82,10 @@ nnoremap <leader>a :Ack
 " Audio bell == annoying
 set vb t_vb=
 
+" Textmate-style invisible char markers
+set list
+set listchars=tab:▸\ ,eol:¬
+
 " Show extra whitespace
 highlight ExtraWhitespace ctermbg=white
 match ExtraWhitespace /\s\+$/
