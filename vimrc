@@ -51,7 +51,7 @@ map <C-Space> <C-x><C-o>
 " Colorscheme bullshittery:
 set t_Co=16
 set background=dark
-colors ir_black
+colorscheme lucius
 
 " Adjust colors as necessary
 hi ColorColumn ctermbg=darkgray
