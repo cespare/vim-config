@@ -8,9 +8,9 @@ hi ExtraWhitespace guibg=#CCCCCC
 call ToggleColorColumn()
 
 " My favorite coding font
-let s:uname = system("uname")
+let s:uname = system("echo -n \"$(uname)\"")
 if s:uname == "Darwin"
-  set guifont=DroidSansMonoSlashed:h12
+  set guifont=Droid\ Sans\ Mono\ Slashed:h12
 else
   set guifont="Droid Sans Mono Slashed 10"
 endif
