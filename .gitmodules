@@ -85,3 +85,9 @@
 [submodule "bundle/coffeescript"]
 	path = bundle/coffeescript
 	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/mxml-syntax"]
+	path = bundle/mxml-syntax
+	url = git@github.com:cespare/mxml.vim.git
+[submodule "bundle/dtd-syntax"]
+	path = bundle/dtd-syntax
+	url = git@github.com:cespare/dtd.vim.git
