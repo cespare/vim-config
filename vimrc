@@ -54,7 +54,13 @@ set background=dark
 colorscheme lucius
 
 " Adjust colors as necessary
-hi ColorColumn ctermbg=darkgray
+hi ColorColumn     guibg=#444444
+hi ColorColumn     ctermbg=0
+hi IncSearch       guifg=NONE   guibg=#353E44
+hi IncSearch       ctermfg=NONE ctermbg=67
+hi Search          guifg=NONE guibg=#545449
+hi Search          ctermfg=NONE ctermbg=22
+
 
 " latex build + evince ps view
 "nmap <leader>tex :!(texbuildps.py %)<CR><CR>
@@ -87,7 +93,8 @@ set list
 set listchars=tab:▸\ ,eol:¬
 
 " Show extra whitespace
-highlight ExtraWhitespace ctermbg=white
+hi ExtraWhitespace guibg=#CCCCCC
+hi ExtraWhitespace ctermbg=7
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
