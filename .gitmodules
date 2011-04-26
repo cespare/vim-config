@@ -31,9 +31,6 @@
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/tsaleh/vim-matchit.git
-[submodule "bundle/ruby-matchit"]
-	path = bundle/ruby-matchit
-	url = https://github.com/vim-scripts/ruby-matchit.git
 [submodule "bundle/bclose"]
 	path = bundle/bclose
 	url = git@github.com:cespare/vim-bclose.git
@@ -91,3 +88,9 @@
 [submodule "bundle/dtd-syntax"]
 	path = bundle/dtd-syntax
 	url = git@github.com:cespare/dtd.vim.git
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "bundle/xterm-color-table"]
+	path = bundle/xterm-color-table
+	url = https://github.com/vim-scripts/xterm-color-table.vim.git
