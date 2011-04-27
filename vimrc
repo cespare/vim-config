@@ -47,6 +47,11 @@ let mapleader = ","
 map <F6> :b#<CR>
 map <C-n> :noh<CR>
 map <C-Space> <C-x><C-o>
+" I don't use s and S in normal mode much. Let's make them do something useful
+" * s will break the line at the current spot and move it down.
+" * S is the same, but moves it up.
+nnoremap s i<CR><ESC>==
+nnoremap S d$O<ESC>p==
 
 " Colorscheme bullshittery:
 set t_Co=16
@@ -101,7 +106,7 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 " A command to delete all trailing whitespace from a file.
-command DeleteTrailingWhitespace %s:\(\S*\)\s\+$:\1:
+command! DeleteTrailingWhitespace %s:\(\S*\)\s\+$:\1:
 
 " For some reason I accidentally hit this shortcut all the time...let's disable it. (I usually don't look at
 " man pages from within vim anyway.)
@@ -126,7 +131,7 @@ set backupdir=~/.vim/tmp/backup//
 set undodir=~/.vim/tmp/undo/
 
 " Toggle colorcolumn
-function ToggleColorColumn()
+function! ToggleColorColumn()
   if &colorcolumn == 0
     " Draw the color column wherever wrapmargin is set
     let &colorcolumn = &wrapmargin
