@@ -61,7 +61,6 @@ hi IncSearch       ctermfg=NONE ctermbg=67
 hi Search          guifg=NONE guibg=#545449
 hi Search          ctermfg=NONE ctermbg=22
 
-
 " latex build + evince ps view
 "nmap <leader>tex :!(texbuildps.py %)<CR><CR>
 
@@ -106,10 +105,10 @@ command DeleteTrailingWhitespace %s:\(\S*\)\s\+$:\1:
 
 " For some reason I accidentally hit this shortcut all the time...let's disable it. (I usually don't look at
 " man pages from within vim anyway.)
-:map K <Nop>
+map K <Nop>
 
 " Preview the current markdown file:
-:map <leader>m :%w ! markdown_doctor \| bcat<CR><CR>
+map <leader>m :%w ! markdown_doctor \| bcat<CR><CR>
 
 " Close a buffer without messing with the windows (vim-bclose)
 nmap <leader>q <Plug>Kwbd
@@ -117,6 +116,10 @@ nmap <leader>q <Plug>Kwbd
 " Macvim default clipboard interaction is bullshit
 set clipboard=unnamed
 
+" Ensure the temp dirs exist
+call system("mkdir -p ~/.vim/tmp/blah")
+call system("mkdir -p ~/.vim/tmp/backup")
+call system("mkdir -p ~/.vim/tmp/undo")
 " Change where we store swap/undo files
 set dir=~/.vim/tmp/swap//
 set backupdir=~/.vim/tmp/backup//
@@ -132,7 +135,7 @@ function ToggleColorColumn()
   endif
 endfunction
 command! ToggleColorColumn call ToggleColorColumn()
-:map <leader>l :ToggleColorColumn<CR>
+map <leader>l :ToggleColorColumn<CR>
 
 " TODO: move all the language-specific settings to ftplugins
 
