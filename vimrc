@@ -162,3 +162,6 @@ augroup markdown
   au!
   au FileType markdown set comments=b:*,b:-,b:+,n:>h
 augroup END
+
+" Coffeescript settings (related to vim-coffee-script plugin)
+vmap <leader>co :CoffeeCompile<CR>
