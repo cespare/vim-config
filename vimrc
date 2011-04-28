@@ -89,8 +89,12 @@ noremap D 30j
 " Ack >> grep
 nnoremap <leader>a :Ack
 
-" Audio bell == annoying
-set vb t_vb=
+" Bells == annoying
+set vb
+set t_vb=
+if has("autocmd") && has("gui")
+  au GUIEnter * set t_vb=
+endif
 
 " Textmate-style invisible char markers
 set list
