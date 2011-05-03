@@ -61,10 +61,12 @@ colorscheme lucius
 " Adjust colors as necessary
 hi ColorColumn     guibg=#444444
 hi ColorColumn     ctermbg=0
-hi IncSearch       guifg=NONE   guibg=#353E44
-hi IncSearch       ctermfg=NONE ctermbg=67
-hi Search          guifg=NONE guibg=#545449
-hi Search          ctermfg=NONE ctermbg=22
+hi IncSearch       guifg=NONE     guibg=#353E44
+hi IncSearch       ctermfg=NONE   ctermbg=67
+hi Search          guifg=NONE     guibg=#545449
+hi Search          ctermfg=NONE   ctermbg=22
+hi Comment         guifg=#999999  gui=NONE
+hi Comment         ctermfg=245    cterm=NONE
 
 " latex build + evince ps view
 "nmap <leader>tex :!(texbuildps.py %)<CR><CR>
