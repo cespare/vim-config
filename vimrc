@@ -146,6 +146,9 @@ endfunction
 command! ToggleColorColumn call ToggleColorColumn()
 map <leader>l :ToggleColorColumn<CR>
 
+" Don't back up temp files
+set backupskip=/tmp/*,/private/tmp/*
+
 " TODO: move all the language-specific settings to ftplugins
 
 " Nice ruby settings
