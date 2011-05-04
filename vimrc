@@ -49,7 +49,6 @@ let mapleader = ","
 " Mappings:
 map <F6> :b#<CR>
 map <C-n> :noh<CR>
-map <C-Space> <C-x><C-o>
 " I don't use s and S in normal mode much. Let's make them do something useful
 " * s will break the line at the current spot and move it down.
 " * S is the same, but moves it up.
