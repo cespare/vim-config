@@ -41,6 +41,9 @@ set backspace=indent,eol,start
 set linespace=3
 set incsearch
 
+" Allow for modelines
+set modeline
+
 let mapleader = ","
 
 " Mappings:
