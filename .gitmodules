@@ -106,3 +106,6 @@
 [submodule "bundle/autoclose"]
 	path = bundle/autoclose
 	url = https://github.com/vim-scripts/AutoClose
+[submodule "pathogen"]
+	path = pathogen
+	url = https://github.com/tpope/vim-pathogen.git
