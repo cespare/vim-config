@@ -103,3 +103,6 @@
 [submodule "bundle/cespare-snippets"]
 	path = bundle/cespare-snippets
 	url = git@github.com:cespare/cespare-snippets.git
+[submodule "bundle/autoclose"]
+	path = bundle/autoclose
+	url = https://github.com/vim-scripts/AutoClose
