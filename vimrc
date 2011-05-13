@@ -1,5 +1,4 @@
 " This is my .vimrc...I use gvim on linux, macvim on Mac OS. 7.3 required.
-" Note that there's no particular ordering here (except pathogen stuff comes first).
 
 " =========================================== Configure Pathogen ============================================
 filetype off
@@ -152,6 +151,11 @@ noremap D 30j
 " Close a buffer without messing with the windows (vim-bclose)
 nmap <leader>q <Plug>Kwbd
 
+" Hashrocket
+imap <C-l> <Space>=><Space>
+
+" No colon in command mode to enter an ex command; just use space
+nnoremap <Space> :
 
 " Shortcuts for custom commands:
 map <leader>m :MarkdownDoctor<CR>
