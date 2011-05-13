@@ -97,3 +97,9 @@
 [submodule "bundle/autotag"]
 	path = bundle/autotag
 	url = https://github.com/vim-scripts/AutoTag.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "bundle/cespare-snippets"]
+	path = bundle/cespare-snippets
+	url = git@github.com:cespare/cespare-snippets.git
