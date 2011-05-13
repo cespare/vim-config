@@ -1,12 +1,13 @@
 " This is my .vimrc...I use gvim on linux, macvim on Mac OS. 7.3 required.
 " Note that there's no particular ordering here (except pathogen stuff comes first).
 
-" Pathogen == teh awesomes.
+" =========================================== Configure Pathogen ============================================
 filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
+" =========================================== Basic Settings ================================================
 syntax on
 filetype plugin indent on
 
@@ -46,16 +47,38 @@ set modeline
 
 let mapleader = ","
 
-" Mappings:
-map <F6> :b#<CR>
-map <C-n> :noh<CR>
-" I don't use s and S in normal mode much. Let's make them do something useful
-" * s will break the line at the current spot and move it down.
-" * S is the same, but moves it up.
-nnoremap s i<CR><ESC>==
-nnoremap S d$O<ESC>p==
+" Bells == annoying
+set vb
+set t_vb=
+if has("autocmd") && has("gui")
+  au GUIEnter * set t_vb=
+endif
 
-" Colorscheme bullshittery:
+" For some reason I accidentally hit this shortcut all the time...let's disable it. (I usually don't look at
+" man pages from within vim anyway.)
+map K <Nop>
+
+" Textmate-style invisible char markers
+set list
+set listchars=tab:▸\ ,eol:¬
+
+" Macvim default clipboard interaction is bullshit
+set clipboard=unnamed
+
+" Ensure the temp dirs exist
+call system("mkdir -p ~/.vim/tmp/blah")
+call system("mkdir -p ~/.vim/tmp/backup")
+call system("mkdir -p ~/.vim/tmp/undo")
+
+" Change where we store swap/undo files
+set dir=~/.vim/tmp/swap//
+set backupdir=~/.vim/tmp/backup//
+set undodir=~/.vim/tmp/undo/
+
+" Don't back up temp files
+set backupskip=/tmp/*,/private/tmp/*
+
+" ======================================= Colorscheme Settings ==============================================
 set t_Co=16
 set background=dark
 colorscheme lucius
@@ -70,9 +93,16 @@ hi Search          ctermfg=NONE   ctermbg=22
 hi Comment         guifg=#999999  gui=NONE
 hi Comment         ctermfg=245    cterm=NONE
 
-" latex build + evince ps view
-"nmap <leader>tex :!(texbuildps.py %)<CR><CR>
+" Show extra whitespace
+hi ExtraWhitespace guibg=#CCCCCC
+hi ExtraWhitespace ctermbg=7
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
 
+" ======================================== Plugin-specific Settings =========================================
 " Gundo settings
 nnoremap <leader>g :GundoToggle<CR>
 
@@ -84,59 +114,12 @@ nmap <leader>t :NERDTreeToggle<CR>
 " Stupid NERDCommenter warning
 let NERDShutUp=1
 
-" Make it easier to move around through blocks of text:
-noremap <C-J> gj
-noremap <C-k> gk
-noremap U 30k
-noremap D 30j
-
-" Ack >> grep
-nnoremap <leader>a :Ack
-
-" Bells == annoying
-set vb
-set t_vb=
-if has("autocmd") && has("gui")
-  au GUIEnter * set t_vb=
-endif
-
-" Textmate-style invisible char markers
-set list
-set listchars=tab:▸\ ,eol:¬
-
-" Show extra whitespace
-hi ExtraWhitespace guibg=#CCCCCC
-hi ExtraWhitespace ctermbg=7
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
-
+" ========================================== Custom Commands ================================================
 " A command to delete all trailing whitespace from a file.
 command! DeleteTrailingWhitespace %s:\(\S*\)\s\+$:\1:
 
-" For some reason I accidentally hit this shortcut all the time...let's disable it. (I usually don't look at
-" man pages from within vim anyway.)
-map K <Nop>
-
 " Preview the current markdown file:
-map <leader>m :%w ! markdown_doctor \| bcat<CR><CR>
-
-" Close a buffer without messing with the windows (vim-bclose)
-nmap <leader>q <Plug>Kwbd
-
-" Macvim default clipboard interaction is bullshit
-set clipboard=unnamed
-
-" Ensure the temp dirs exist
-call system("mkdir -p ~/.vim/tmp/blah")
-call system("mkdir -p ~/.vim/tmp/backup")
-call system("mkdir -p ~/.vim/tmp/undo")
-" Change where we store swap/undo files
-set dir=~/.vim/tmp/swap//
-set backupdir=~/.vim/tmp/backup//
-set undodir=~/.vim/tmp/undo/
+command! MarkdownDoctor :%w ! markdown_doctor \| bcat<CR><CR>
 
 " Toggle colorcolumn
 function! ToggleColorColumn()
@@ -148,13 +131,33 @@ function! ToggleColorColumn()
   endif
 endfunction
 command! ToggleColorColumn call ToggleColorColumn()
+
+" ============================================ My Mappings ==================================================
+" Mappings:
+map <F6> :b#<CR>
+map <C-n> :noh<CR>
+
+" I don't use s and S in normal mode much. Let's make them do something useful
+" * s will break the line at the current spot and move it down.
+" * S is the same, but moves it up.
+nnoremap s i<CR><ESC>==
+nnoremap S d$O<ESC>p==
+
+" Make it easier to move around through blocks of text:
+noremap <C-J> gj
+noremap <C-k> gk
+noremap U 30k
+noremap D 30j
+
+" Close a buffer without messing with the windows (vim-bclose)
+nmap <leader>q <Plug>Kwbd
+
+
+" Shortcuts for custom commands:
+map <leader>m :MarkdownDoctor<CR>
 map <leader>l :ToggleColorColumn<CR>
 
-" Don't back up temp files
-set backupskip=/tmp/*,/private/tmp/*
-
-" TODO: move all the language-specific settings to ftplugins
-
+" ====================================== Language-specific Settings =========================================
 " Nice ruby settings
 let ruby_space_settings = 1
 
