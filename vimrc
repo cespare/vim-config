@@ -108,7 +108,7 @@ nnoremap <leader>g :GundoToggle<CR>
 " NERDTree settings
 let g:NERDTreeChDirMode=2
 let g:NERDChristmasTree=1
-nmap <leader>t :NERDTreeToggle<CR>
+nmap <leader>t :NERDTreeToggle<CR><C-w>=
 
 " Stupid NERDCommenter warning
 let NERDShutUp=1
