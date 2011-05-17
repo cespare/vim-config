@@ -161,6 +161,9 @@ nnoremap <Space> :
 map <leader>m :MarkdownDoctor<CR>
 map <leader>l :ToggleColorColumn<CR>
 
+" Git blame shortcut (fugitive)
+map <leader>bl :Gblame<CR>
+
 " ====================================== Language-specific Settings =========================================
 " Nice ruby settings
 let ruby_space_settings = 1
