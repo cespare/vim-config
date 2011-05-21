@@ -65,9 +65,11 @@ set listchars=tab:▸\ ,eol:¬
 set clipboard=unnamed
 
 " Ensure the temp dirs exist
-call system("mkdir -p ~/.vim/tmp/blah")
-call system("mkdir -p ~/.vim/tmp/backup")
-call system("mkdir -p ~/.vim/tmp/undo")
+if !isdirectory($HOME . "/.vim/tmp")
+  call system("mkdir -p ~/.vim/tmp/swap")
+  call system("mkdir -p ~/.vim/tmp/backup")
+  call system("mkdir -p ~/.vim/tmp/undo")
+endif
 
 " Change where we store swap/undo files
 set dir=~/.vim/tmp/swap//
