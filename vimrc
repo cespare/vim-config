@@ -77,7 +77,7 @@ set undodir=~/.vim/tmp/undo/
 " Don't back up temp files
 set backupskip=/tmp/*,/private/tmp/*
 
-" ======================================= Colorscheme Settings ==============================================
+" =============================== Colorscheme Settings (assume Lucius) ======================================
 set t_Co=16
 set background=dark
 colorscheme lucius
@@ -100,6 +100,12 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+
+" Change the color of the statusline when in insert mode
+autocmd InsertEnter * hi StatusLine ctermfg=237 ctermbg=252
+autocmd InsertEnter * hi StatusLine guifg=#363946 guibg=#c0c0c0 gui=bold
+autocmd InsertLeave * hi StatusLine ctermfg=254 ctermbg=237
+autocmd InsertLeave * hi StatusLine guifg=#e0e0e0 guibg=#363946 gui=bold
 
 " ======================================== Plugin-specific Settings =========================================
 " Gundo settings
