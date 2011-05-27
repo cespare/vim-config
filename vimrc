@@ -117,6 +117,7 @@ nnoremap <leader>g :GundoToggle<CR>
 let g:NERDTreeChDirMode=2
 let g:NERDChristmasTree=1
 nmap <leader>t :NERDTreeToggle<CR><C-w>=
+nmap <leader>n :NERDTreeFind<CR>
 
 " Stupid NERDCommenter warning
 let NERDShutUp=1
@@ -126,7 +127,7 @@ let NERDShutUp=1
 command! DeleteTrailingWhitespace %s:\(\S*\)\s\+$:\1:
 
 " Preview the current markdown file:
-command! MarkdownDoctor :%w ! markdown_doctor \| bcat<CR><CR>
+command! MarkdownDoctor !markdown_doctor % | bcat
 
 " Toggle colorcolumn
 function! ToggleColorColumn()
@@ -166,7 +167,7 @@ imap <C-l> <Space>=><Space>
 nnoremap <Space> :
 
 " Shortcuts for custom commands:
-map <leader>m :MarkdownDoctor<CR>
+map <leader>m :MarkdownDoctor<CR><CR>
 map <leader>l :ToggleColorColumn<CR>
 
 " Git blame shortcut (fugitive)
