@@ -38,7 +38,7 @@ set ignorecase
 set smartcase
 set undofile
 set backspace=indent,eol,start
-set linespace=3
+set linespace=0
 set incsearch
 
 " Allow for modelines
