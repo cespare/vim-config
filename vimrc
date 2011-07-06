@@ -22,7 +22,6 @@ set number
 set hlsearch
 set autoindent
 set smartindent
-set expandtab
 set wildmenu
 set wildmode=list:longest
 set scrolloff=3 " This keeps three lines of context when scrolling
@@ -38,7 +37,7 @@ set ignorecase
 set smartcase
 set undofile
 set backspace=indent,eol,start
-set linespace=0
+set linespace=3
 set incsearch
 
 " Allow for modelines
