@@ -106,3 +106,6 @@
 [submodule "bundle/align"]
 	path = bundle/align
 	url = git@github.com:cespare/vim-align.git
+[submodule "bundle/less"]
+	path = bundle/less
+	url = https://github.com/gmunkhbaatarmn/less.vim.git
