@@ -13,4 +13,5 @@ augroup filetypedetect
   au BufNewFile,BufRead *.i set filetype=swig
   au BufNewFile,BufRead *.as setfiletype actionscript " Actionscript
   au BufNewFile,BufRead *.mxml setfiletype mxml " MXML files
+  au BufNewFile,BufRead *.less setfiletype less " LESS css
 augroup END
