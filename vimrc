@@ -21,7 +21,6 @@ set history=1000 "Longer history
 set number
 set hlsearch
 set autoindent
-set smartindent
 set wildmenu
 set wildmode=list:longest
 set scrolloff=3 " This keeps three lines of context when scrolling
