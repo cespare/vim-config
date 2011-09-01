@@ -1,6 +1,8 @@
 " Start NERDTree automatically.
 autocmd VimEnter * NERDTree
 
+set linespace=1
+
 call ToggleColorColumn()
 
 " My favorite coding font
