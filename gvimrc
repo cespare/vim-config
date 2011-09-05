@@ -1,7 +1,7 @@
 " Start NERDTree automatically.
 autocmd VimEnter * NERDTree
 
-set linespace=1
+set linespace=3 
 
 call ToggleColorColumn()
 
