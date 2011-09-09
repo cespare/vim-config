@@ -17,3 +17,5 @@ endif
 set go-=T
 set go-=m
 
+" One of my plugin turns this on, and it's annoying
+set noballooneval
