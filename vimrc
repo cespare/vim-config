@@ -37,6 +37,7 @@ set smartcase
 set undofile
 set backspace=indent,eol,start
 set incsearch
+set nojoinspaces
 
 " Allow for modelines
 set modeline
