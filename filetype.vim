@@ -10,8 +10,9 @@ augroup filetypedetect
   au BufNewFile,BufRead *.proto setfiletype proto " Protobufs
   au BufNewFile,BufRead *.thrift setfiletype thrift " Thrift
   au BufNewFile,BufRead *.cuh setfiletype cuda " Cuda header files
-  au BufNewFile,BufRead *.i set filetype=swig
+  au BufNewFile,BufRead *.i setfiletype swig
   au BufNewFile,BufRead *.as setfiletype actionscript " Actionscript
   au BufNewFile,BufRead *.mxml setfiletype mxml " MXML files
   au BufNewFile,BufRead *.less setfiletype less " LESS css
+  au BufNewFile,BufRead Vagrantfile setfiletype ruby
 augroup END
