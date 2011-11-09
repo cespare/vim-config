@@ -109,3 +109,9 @@
 [submodule "bundle/less"]
 	path = bundle/less
 	url = https://github.com/gmunkhbaatarmn/less.vim.git
+[submodule "bundle/abolish"]
+	path = bundle/abolish
+	url = https://github.com/tpope/vim-abolish.git
+[submodule "bundle/vidir-ls"]
+	path = bundle/vidir-ls
+	url = https://github.com/trapd00r/vim-syntax-vidir-ls.git
