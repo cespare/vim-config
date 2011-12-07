@@ -38,6 +38,8 @@ set undofile
 set backspace=indent,eol,start
 set incsearch
 set nojoinspaces
+set foldmethod=syntax
+set foldlevel=99
 
 " Allow for modelines
 set modeline
@@ -170,6 +172,9 @@ map <leader>l :ToggleColorColumn<CR>
 
 " Git blame shortcut (fugitive)
 map <leader>bl :Gblame<CR>
+
+" Quick fold toggling
+map <leader>f za
 
 " ====================================== Language-specific Settings =========================================
 " Nice ruby settings
