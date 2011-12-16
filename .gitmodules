@@ -121,3 +121,6 @@
 [submodule "bundle/less"]
 	path = bundle/less
 	url = https://github.com/groenewege/vim-less.git
+[submodule "bundle/puppet"]
+	path = bundle/puppet
+	url = https://github.com/puppetlabs/puppet-syntax-vim.git
