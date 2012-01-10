@@ -9,7 +9,7 @@ if s:uname == "Darwin"
   set guifont=Inconsolata:h14
   set linespace=3
 else
-  set guifont=Inconsolata-dz\ 10
+  set guifont=Inconsolata-dz\ 9
   set linespace=1
 endif
 

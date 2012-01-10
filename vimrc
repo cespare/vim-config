@@ -109,6 +109,12 @@ autocmd InsertEnter * hi StatusLine guifg=#363946 guibg=#c0c0c0 gui=bold
 autocmd InsertLeave * hi StatusLine ctermfg=254 ctermbg=237
 autocmd InsertLeave * hi StatusLine guifg=#e0e0e0 guibg=#363946 gui=bold
 
+" Unset the background color on Linux because it doesn't play nicely with Terminator
+let s:uname = system("echo -n \"$(uname)\"")
+if s:uname == "Linux"
+  hi Normal ctermbg=NONE
+endif
+
 " ======================================== Plugin-specific Settings =========================================
 " Gundo settings
 nnoremap <leader>g :GundoToggle<CR>
