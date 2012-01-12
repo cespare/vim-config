@@ -17,5 +17,8 @@ endif
 set go-=T
 set go-=m
 
+" Don't hide the cursor
+set nomousehide
+
 " One of my plugin turns this on, and it's annoying
 set noballooneval
