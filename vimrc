@@ -31,7 +31,6 @@ set ts=2
 set sw=2
 set sts=2
 set laststatus=2
-set statusline=%<%F%h%m%r%h%w%y\ %{&ff}\ %{strftime(\"%c\",getftime(expand(\"%:p\")))}%=\ lin:%l\,%L\ col:%c%V\ pos:%o\ ascii:%b\ %P
 set ignorecase
 set smartcase
 set undofile
@@ -80,7 +79,7 @@ set undodir=~/.vim/tmp/undo/
 set backupskip=/tmp/*,/private/tmp/*
 
 " =============================== Colorscheme Settings (assume Lucius) ======================================
-set t_Co=16
+set t_Co=256
 set background=dark
 colorscheme lucius
 
@@ -102,12 +101,6 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
-
-" Change the color of the statusline when in insert mode
-autocmd InsertEnter * hi StatusLine ctermfg=237 ctermbg=252
-autocmd InsertEnter * hi StatusLine guifg=#363946 guibg=#c0c0c0 gui=bold
-autocmd InsertLeave * hi StatusLine ctermfg=254 ctermbg=237
-autocmd InsertLeave * hi StatusLine guifg=#e0e0e0 guibg=#363946 gui=bold
 
 " Unset the background color on Linux because it doesn't play nicely with Terminator
 let s:uname = system("echo -n \"$(uname)\"")
