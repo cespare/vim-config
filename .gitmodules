@@ -82,9 +82,6 @@
 [submodule "bundle/dtd-syntax"]
 	path = bundle/dtd-syntax
 	url = git@github.com:cespare/dtd.vim.git
-[submodule "bundle/vim-ruby"]
-	path = bundle/vim-ruby
-	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "bundle/xterm-color-table"]
 	path = bundle/xterm-color-table
 	url = https://github.com/vim-scripts/xterm-color-table.vim.git
