@@ -121,6 +121,11 @@ nmap <leader>n :NERDTreeFind<CR>
 " Stupid NERDCommenter warning
 let NERDShutUp=1
 
+" Command-T settings
+nmap <leader>s :CommandT<CR>
+let g:CommandTCancelMap=['<ESC>','<C-c>']
+let g:CommandTMaxFiles=50000
+
 " ========================================== Custom Commands ================================================
 " A command to delete all trailing whitespace from a file.
 command! DeleteTrailingWhitespace %s:\(\S*\)\s\+$:\1:
