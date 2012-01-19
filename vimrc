@@ -37,8 +37,12 @@ set undofile
 set backspace=indent,eol,start
 set incsearch
 set nojoinspaces
-set foldmethod=syntax
-set foldlevel=99
+
+" Leaving foldmethod=syntax on all the time causes horrible slowdowns for some syntaxes in gvim.
+set foldmethod=manual
+" set foldlevel=99
+" TODO(caleb): Investigate and implement a workaround such as those listed here:
+" http://vim.wikia.com/wiki/Keep_folds_closed_while_inserting_text
 
 " Allow for modelines
 set modeline
@@ -125,6 +129,8 @@ let NERDShutUp=1
 nmap <leader>s :CommandT<CR>
 let g:CommandTCancelMap=['<ESC>','<C-c>']
 let g:CommandTMaxFiles=50000
+let g:CommandTMaxHeight=25
+let g:CommandTMatchWindowReverse=1
 
 " ========================================== Custom Commands ================================================
 " A command to delete all trailing whitespace from a file.
@@ -179,6 +185,9 @@ map <leader>bl :Gblame<CR>
 
 " Quick fold toggling
 map <leader>f za
+
+" Get rid of Ex mode and map a useful command for reflowing text
+nnoremap Q gqap
 
 " ====================================== Language-specific Settings =========================================
 " Nice ruby settings
