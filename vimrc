@@ -24,7 +24,6 @@ set autoindent
 set wildmenu
 set wildmode=list:longest
 set scrolloff=3 " This keeps three lines of context when scrolling
-set notitle
 set expandtab
 set smarttab
 set ts=2
