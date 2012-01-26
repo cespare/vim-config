@@ -106,9 +106,6 @@
 [submodule "bundle/vidir-ls"]
 	path = bundle/vidir-ls
 	url = https://github.com/trapd00r/vim-syntax-vidir-ls.git
-[submodule "bundle/scala"]
-	path = bundle/scala
-	url = https://github.com/derekwyatt/vim-scala.git
 [submodule "bundle/stylus"]
 	path = bundle/stylus
 	url = https://github.com/wavded/vim-stylus.git
@@ -127,3 +124,6 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git@github.com:cespare/Command-T.git
+[submodule "bundle/scala"]
+	path = bundle/scala
+	url = git@github.com:cespare/scala-vim-support.git
