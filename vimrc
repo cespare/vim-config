@@ -167,7 +167,8 @@ noremap U 30k
 noremap D 30j
 
 " Close a buffer without messing with the windows (vim-bclose)
-nmap <leader>q <Plug>Kwbd
+"nmap <leader>q <Plug>Kwbd
+nnoremap <silent> <leader>q :Sbd<CR>
 
 " Hashrocket
 imap <C-l> <Space>=><Space>
