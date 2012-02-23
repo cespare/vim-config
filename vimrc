@@ -1,10 +1,10 @@
 " This is my .vimrc...I use gvim on linux, macvim on Mac OS. 7.3 required.
 
-" ========================================= Configure Pathogen ========================================== {{{
+" ----------------------------------------- Configure Pathogen ------------------------------------------ {{{
 call pathogen#infect()
 
 " }}}
-" ========================================= Basic Settings ============================================== {{{
+" ----------------------------------------- Basic Settings ---------------------------------------------- {{{
 syntax on
 filetype plugin indent on
 
@@ -80,7 +80,7 @@ set undodir=~/.vim/tmp/undo/
 set backupskip=/tmp/*,/private/tmp/*
 
 " }}}
-" ============================= Colorscheme Settings (assume Lucius) ==================================== {{{
+" ----------------------------- Colorscheme Settings (assume Lucius) ------------------------------------ {{{
 set t_Co=256
 set background=dark
 colorscheme lucius
@@ -111,7 +111,7 @@ if s:uname == "Linux"
 endif
 
 " }}}
-" ====================================== Plugin-specific Settings ======================================= {{{
+" -------------------------------------- Plugin-specific Settings --------------------------------------- {{{
 " Gundo settings
 nnoremap <leader>g :GundoToggle<cr>
 
@@ -132,7 +132,7 @@ let g:CommandTMaxHeight=25
 let g:CommandTMatchWindowReverse=1
 
 " }}}
-" ======================================== Custom Commands ============================================== {{{
+" ---------------------------------------- Custom Commands ---------------------------------------------- {{{
 " A command to delete all trailing whitespace from a file.
 command! DeleteTrailingWhitespace %s:\(\S*\)\s\+$:\1:
 
@@ -154,7 +154,7 @@ command! ToggleColorColumn call ToggleColorColumn()
 command! SelectNerdTreeWindow execute "normal " . bufwinnr("NERD_tree_1") . "\<C-w>w"
 
 " }}}
-" ========================================== My Mappings ================================================ {{{
+" ------------------------------------------ My Mappings ------------------------------------------------ {{{
 " Mappings:
 noremap <F6> :b#<cr>
 noremap <C-n> :noh<cr>
@@ -199,7 +199,7 @@ nnoremap Q gqap
 :nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " }}}
-" ==================================== Language-specific Settings ======================================= {{{
+" ------------------------------------ Language-specific Settings --------------------------------------- {{{
 " Nice ruby settings
 let ruby_space_settings = 1
 
