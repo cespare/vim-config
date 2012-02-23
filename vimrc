@@ -85,7 +85,7 @@ colorscheme lucius
 
 " Adjust colors as necessary
 hi ColorColumn     guibg=#444444
-hi ColorColumn     ctermbg=0
+hi ColorColumn     ctermbg=8
 hi IncSearch       guifg=NONE     guibg=#353E44
 hi IncSearch       ctermfg=NONE   ctermbg=67
 hi Search          guifg=NONE     guibg=#545449
