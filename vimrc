@@ -54,7 +54,7 @@ endif
 
 " For some reason I accidentally hit this shortcut all the time...let's disable it. (I usually don't look at
 " man pages from within vim anyway.)
-map K <Nop>
+noremap K <Nop>
 
 " Textmate-style invisible char markers
 set list
@@ -115,14 +115,14 @@ nnoremap <leader>g :GundoToggle<CR>
 " NERDTree settings
 let g:NERDTreeChDirMode=2
 let g:NERDChristmasTree=1
-nmap <leader>t :NERDTreeToggle<CR><C-w>=
-nmap <leader>n :NERDTreeFind<CR>
+nnoremap <leader>t :NERDTreeToggle<CR><C-w>=
+nnoremap <leader>n :NERDTreeFind<CR>
 
 " Stupid NERDCommenter warning
 let NERDShutUp=1
 
 " Command-T settings
-nmap <leader>s :CommandT<CR>
+nnoremap <leader>s :CommandT<CR>
 let g:CommandTCancelMap=['<ESC>','<C-c>']
 let g:CommandTMaxFiles=50000
 let g:CommandTMaxHeight=25
@@ -148,8 +148,8 @@ command! ToggleColorColumn call ToggleColorColumn()
 
 " ============================================ My Mappings ==================================================
 " Mappings:
-map <F6> :b#<CR>
-map <C-n> :noh<CR>
+noremap <F6> :b#<CR>
+noremap <C-n> :noh<CR>
 
 " I don't use s and S in normal mode much. Let's make them do something useful
 " * s will break the line at the current spot and move it down.
@@ -168,20 +168,20 @@ noremap D 30j
 nnoremap <silent> <leader>q :Sbd<CR>
 
 " Hashrocket
-imap <C-l> <Space>=><Space>
+inoremap <C-l> <Space>=><Space>
 
 " No colon in command mode to enter an ex command; just use space
 nnoremap <Space> :
 
 " Shortcuts for custom commands:
-map <leader>m :MarkdownDoctor<CR><CR>
-map <leader>l :ToggleColorColumn<CR>
+noremap <leader>m :MarkdownDoctor<CR><CR>
+noremap <leader>l :ToggleColorColumn<CR>
 
 " Git blame shortcut (fugitive)
-map <leader>bl :Gblame<CR>
+noremap <leader>bl :Gblame<CR>
 
 " Quick fold toggling
-map <leader>f za
+noremap <leader>f za
 
 " Get rid of Ex mode and map a useful command for reflowing text
 nnoremap Q gqap
@@ -203,4 +203,4 @@ augroup markdown
 augroup END
 
 " Coffeescript settings (related to vim-coffee-script plugin)
-vmap <leader>co :CoffeeCompile<CR>
+vnoremap <leader>co :CoffeeCompile<CR>
