@@ -150,6 +150,9 @@ function! ToggleColorColumn()
 endfunction
 command! ToggleColorColumn call ToggleColorColumn()
 
+" Quickly select the NERDTree window
+command! SelectNerdTreeWindow execute "normal " . bufwinnr("NERD_tree_1") . "\<C-w>w"
+
 " }}}
 " ========================================== My Mappings ================================================ {{{
 " Mappings:
