@@ -186,6 +186,10 @@ noremap <leader>f za
 " Get rid of Ex mode and map a useful command for reflowing text
 nnoremap Q gqap
 
+" Suggestions from Learn Vimscript the Hard Way
+:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+:nnoremap <leader>sv :source $MYVIMRC<cr>
+
 " ====================================== Language-specific Settings =========================================
 " Nice ruby settings
 let ruby_space_settings = 1
