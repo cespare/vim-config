@@ -36,7 +36,7 @@ set nojoinspaces
 
 " Leaving foldmethod=syntax on all the time causes horrible slowdowns for some syntaxes in gvim.
 set foldmethod=manual
-" set foldlevel=99
+set foldlevel=99
 " TODO(caleb): Investigate and implement a workaround such as those listed here:
 " http://vim.wikia.com/wiki/Keep_folds_closed_while_inserting_text
 
@@ -204,6 +204,12 @@ augroup END
 augroup markdown
   au!
   au FileType markdown set comments=b:*,b:-,b:+,n:>h
+augroup END
+
+" Vimscript settings
+augroup filetype_vim
+  au!
+  au FileType vim setlocal foldmethod=marker
 augroup END
 
 " Coffeescript settings (related to vim-coffee-script plugin)
