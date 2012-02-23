@@ -133,3 +133,6 @@
 [submodule "bundle/sbd"]
 	path = bundle/sbd
 	url = https://github.com/orftz/sbd.vim.git
+[submodule "bundle/slim"]
+	path = bundle/slim
+	url = https://github.com/bbommarito/vim-slim.git
