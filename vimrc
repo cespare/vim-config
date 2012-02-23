@@ -110,19 +110,19 @@ endif
 
 " ======================================== Plugin-specific Settings =========================================
 " Gundo settings
-nnoremap <leader>g :GundoToggle<CR>
+nnoremap <leader>g :GundoToggle<cr>
 
 " NERDTree settings
 let g:NERDTreeChDirMode=2
 let g:NERDChristmasTree=1
-nnoremap <leader>t :NERDTreeToggle<CR><C-w>=
-nnoremap <leader>n :NERDTreeFind<CR>
+nnoremap <leader>t :NERDTreeToggle<cr><C-w>=
+nnoremap <leader>n :NERDTreeFind<cr>
 
 " Stupid NERDCommenter warning
 let NERDShutUp=1
 
 " Command-T settings
-nnoremap <leader>s :CommandT<CR>
+nnoremap <leader>s :CommandT<cr>
 let g:CommandTCancelMap=['<ESC>','<C-c>']
 let g:CommandTMaxFiles=50000
 let g:CommandTMaxHeight=25
@@ -148,13 +148,13 @@ command! ToggleColorColumn call ToggleColorColumn()
 
 " ============================================ My Mappings ==================================================
 " Mappings:
-noremap <F6> :b#<CR>
-noremap <C-n> :noh<CR>
+noremap <F6> :b#<cr>
+noremap <C-n> :noh<cr>
 
 " I don't use s and S in normal mode much. Let's make them do something useful
 " * s will break the line at the current spot and move it down.
 " * S is the same, but moves it up.
-nnoremap s i<CR><ESC>==
+nnoremap s i<cr><ESC>==
 nnoremap S d$O<ESC>p==
 
 " Make it easier to move around through blocks of text:
@@ -165,7 +165,7 @@ noremap D 30j
 
 " Close a buffer without messing with the windows (vim-bclose)
 "nmap <leader>q <Plug>Kwbd
-nnoremap <silent> <leader>q :Sbd<CR>
+nnoremap <silent> <leader>q :Sbd<cr>
 
 " Hashrocket
 inoremap <C-l> <Space>=><Space>
@@ -174,11 +174,11 @@ inoremap <C-l> <Space>=><Space>
 nnoremap <Space> :
 
 " Shortcuts for custom commands:
-noremap <leader>m :MarkdownDoctor<CR><CR>
-noremap <leader>l :ToggleColorColumn<CR>
+noremap <leader>m :MarkdownDoctor<cr><cr>
+noremap <leader>l :ToggleColorColumn<cr>
 
 " Git blame shortcut (fugitive)
-noremap <leader>bl :Gblame<CR>
+noremap <leader>bl :Gblame<cr>
 
 " Quick fold toggling
 noremap <leader>f za
@@ -203,4 +203,4 @@ augroup markdown
 augroup END
 
 " Coffeescript settings (related to vim-coffee-script plugin)
-vnoremap <leader>co :CoffeeCompile<CR>
+vnoremap <leader>co :CoffeeCompile<cr>
