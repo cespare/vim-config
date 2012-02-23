@@ -1,10 +1,7 @@
 " This is my .vimrc...I use gvim on linux, macvim on Mac OS. 7.3 required.
 
 " =========================================== Configure Pathogen ============================================
-filetype off
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
-filetype plugin indent on
+call pathogen#infect()
 
 " =========================================== Basic Settings ================================================
 syntax on
