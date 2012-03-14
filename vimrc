@@ -124,12 +124,20 @@ nnoremap <leader>nf :NERDTreeFind<cr>
 " Stupid NERDCommenter warning
 let NERDShutUp=1
 
-" Command-T settings
-nnoremap <leader>s :CommandT<cr>
-let g:CommandTCancelMap=['<ESC>','<C-c>']
-let g:CommandTMaxFiles=50000
-let g:CommandTMaxHeight=25
-let g:CommandTMatchWindowReverse=1
+" CtrlP Settings
+" Going to use <leader>d* commands to launch ctrlp.
+" No good mnemonic, but it's very quick to type and unused.
+" Disable default mapping
+let g:ctrlp_map = ''
+nnoremap <leader>dp :CtrlP<cr>
+nnoremap <leader>db :CtrlPBuffer<cr>
+nnoremap <leader>dm :CtrlPMRU<cr>
+" Start CtrlP in the project root (containing .git, etc)
+let g:ctrlp_working_path_mode = 2
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\.git$',
+  \ 'file': '\.log$',
+  \ }
 
 " }}}
 " ---------------------------------------- Custom Commands ---------------------------------------------- {{{
@@ -157,7 +165,7 @@ command! SelectNerdTreeWindow execute "normal " . bufwinnr("NERD_tree_1") . "\<C
 " ------------------------------------------ My Mappings ------------------------------------------------ {{{
 " Mappings:
 noremap <F6> :b#<cr>
-noremap <C-n> :noh<cr>
+noremap <leader>nn :noh<cr>
 
 " I don't use s and S in normal mode much. Let's make them do something useful
 " * s will break the line at the current spot and move it down.
