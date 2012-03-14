@@ -139,6 +139,11 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\.log$',
   \ }
 
+" Syntastic settings
+let g:syntastic_mode_map = { 'mode': 'passive',
+                           \ 'active_filetypes': ['ruby', 'coffee'],
+                           \ }
+
 " }}}
 " ---------------------------------------- Custom Commands ---------------------------------------------- {{{
 " A command to delete all trailing whitespace from a file.
