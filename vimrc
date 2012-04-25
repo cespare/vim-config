@@ -125,13 +125,15 @@ nnoremap <leader>nf :NERDTreeFind<cr>
 let NERDShutUp=1
 
 " CtrlP Settings
-" Going to use <leader>d* commands to launch ctrlp.
-" No good mnemonic, but it's very quick to type and unused.
 " Disable default mapping
 let g:ctrlp_map = ''
+" Going to use <leader>d* commands to launch ctrlp.
+" No good mnemonic, but it's very quick to type and unused.
 nnoremap <leader>dp :CtrlP<cr>
 nnoremap <leader>db :CtrlPBuffer<cr>
 nnoremap <leader>dm :CtrlPMRU<cr>
+" Consider a Gemfile in addition to the other project root indicators
+let g:ctrlp_root_markers = ['Gemfile']
 " Start CtrlP in the project root (containing .git, etc)
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_custom_ignore = {
