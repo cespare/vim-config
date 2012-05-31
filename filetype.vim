@@ -4,7 +4,6 @@ augroup filetypedetect
   au BufRead,BufNewFile *.m	setf objc "Objective-C
   au BufNewFile,BufRead *.cobra setf cobra " Cobra
   au BufNewFile,BufRead *.scala,*.sbt setf scala " Scala
-  au BufNewFile,BufRead *.go setf go " Google Go
   au BufNewFile,BufRead *.cilk setf cpp " Cilk
   au BufNewFile,BufRead *.hj setf java " Habanero Java
   au BufNewFile,BufRead *.proto setfiletype proto " Protobufs

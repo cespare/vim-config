@@ -142,3 +142,9 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/indent-guides"]
+	path = bundle/indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "bundle/golang"]
+	path = bundle/golang
+	url = https://github.com/jnwhiteh/vim-golang.git

@@ -168,6 +168,14 @@ command! ToggleColorColumn call ToggleColorColumn()
 " Quickly select the NERDTree window
 command! SelectNerdTreeWindow execute "normal " . bufwinnr("NERD_tree_1") . "\<C-w>w"
 
+" Use gofmt to format go code
+function Goformat()
+  let regel=line(".")
+  %!gofmt
+  call cursor(regel, 1)
+endfunction
+autocmd Filetype go command! Fmt call Goformat()
+
 " }}}
 " ------------------------------------------ My Mappings ------------------------------------------------ {{{
 " Mappings:
@@ -213,6 +221,9 @@ nnoremap Q gqap
 " Suggestions from Learn Vimscript the Hard Way
 :nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 :nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" Format Go code
+:nnoremap <leader>nf :Fmt<cr>
 
 " }}}
 " ------------------------------------ Language-specific Settings --------------------------------------- {{{
