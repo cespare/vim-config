@@ -234,6 +234,7 @@ let ruby_space_settings = 1
 augroup golang
   au!
   au FileType go set noexpandtab
+  au FileType go set listchars=tab:\ \ ,eol:¬
 augroup END
 
 " Markdown settings
