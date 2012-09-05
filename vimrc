@@ -35,6 +35,14 @@ set backspace=indent,eol,start
 set incsearch
 set nojoinspaces
 
+" When completing, don't automatically select the first choice, but instead just insert the longest common
+" text.
+set completeopt=menu,longest
+
+" See stuff in .vim/after/plugins/endwise.vim for some more completion settings that necessarily must be
+" loaded after endwise. (https://github.com/tpope/vim-endwise/pull/16)
+" TODO: Get around this; it's better to have all configuration in this file or in plugins directly.
+
 " Leaving foldmethod=syntax on all the time causes horrible slowdowns for some syntaxes in gvim.
 set foldmethod=manual
 set foldlevel=99
