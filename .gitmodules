@@ -13,9 +13,6 @@
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = https://github.com/vim-scripts/ack.vim.git
-[submodule "bundle/endwise"]
-	path = bundle/endwise
-	url = https://github.com/tpope/vim-endwise.git
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
@@ -148,3 +145,6 @@
 [submodule "bundle/golang"]
 	path = bundle/golang
 	url = https://github.com/jnwhiteh/vim-golang.git
+[submodule "bundle/endwise"]
+	path = bundle/endwise
+	url = git@github.com:cespare/vim-endwise.git
