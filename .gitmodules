@@ -148,3 +148,6 @@
 [submodule "bundle/endwise"]
 	path = bundle/endwise
 	url = git@github.com:cespare/vim-endwise.git
+[submodule "bundle/insertlessly"]
+	path = bundle/insertlessly
+	url = git://github.com/dahu/Insertlessly.git

@@ -154,6 +154,9 @@ let g:syntastic_mode_map = { 'mode': 'passive',
                            \ 'active_filetypes': ['ruby', 'coffee'],
                            \ }
 
+" Insertlessly settings
+let g:insertlessly_insert_spaces = 0 " I nmap space to :
+
 " }}}
 " ---------------------------------------- Custom Commands ---------------------------------------------- {{{
 " A command to delete all trailing whitespace from a file.
@@ -190,14 +193,8 @@ autocmd Filetype go command! Fmt call Goformat()
 noremap <F6> :b#<cr>
 noremap <leader>nn :noh<cr>
 
-" I don't use s and S in normal mode much. Let's make them do something useful
-" * s will break the line at the current spot and move it down.
-" * S is the same, but moves it up.
-nnoremap s i<cr><ESC>==
-nnoremap S d$O<ESC>p==
-
 " Make it easier to move around through blocks of text:
-noremap <C-J> gj
+noremap <C-j> gj
 noremap <C-k> gk
 noremap U 30k
 noremap D 30j
