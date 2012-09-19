@@ -157,6 +157,9 @@ let g:syntastic_mode_map = { 'mode': 'passive',
 " Insertlessly settings
 let g:insertlessly_insert_spaces = 0 " I nmap space to :
 
+" Powerline settings
+let g:Powerline_symbols = 'fancy'
+
 " }}}
 " ---------------------------------------- Custom Commands ---------------------------------------------- {{{
 " A command to delete all trailing whitespace from a file.
