@@ -87,6 +87,14 @@ set undodir=~/.vim/tmp/undo/
 " Don't back up temp files
 set backupskip=/tmp/*,/private/tmp/*
 
+" Don't save other tabs in sessions (as I don't use tabs)
+set sessionoptions-=tabpages
+" Don't save help pages in sessions
+set sessionoptions-=help
+" Don't save hidden buffers -- only save the visible ones.
+set sessionoptions-=buffers
+
+
 " }}}
 " ----------------------------- Colorscheme Settings (assume Lucius) ------------------------------------ {{{
 set t_Co=256
@@ -159,6 +167,9 @@ let g:insertlessly_insert_spaces = 0 " I nmap space to :
 
 " Powerline settings
 let g:Powerline_symbols = 'fancy'
+
+" vim-session settings
+let g:session_directory = '.'
 
 " }}}
 " ---------------------------------------- Custom Commands ---------------------------------------------- {{{
