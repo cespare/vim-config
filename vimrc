@@ -170,6 +170,8 @@ let g:Powerline_symbols = 'fancy'
 
 " vim-session settings
 let g:session_directory = '.'
+let g:session_autoload = 'yes' " Automatically load session if file exists; don't prompt
+let g:autosave = 'yes' " Automatically save an open session on exit; don't prompt
 
 " }}}
 " ---------------------------------------- Custom Commands ---------------------------------------------- {{{
