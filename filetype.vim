@@ -14,4 +14,5 @@ augroup filetypedetect
   au BufNewFile,BufRead *.mxml setfiletype mxml " MXML files
   au BufNewFile,BufRead *.less setfiletype less " LESS css
   au BufNewFile,BufRead Vagrantfile setfiletype ruby
+  au BufNewFile,BufRead *.tmpl setfiletype gotplhtml " Go templates
 augroup END
