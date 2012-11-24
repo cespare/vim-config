@@ -67,7 +67,7 @@ noremap K <Nop>
 
 " Textmate-style invisible char markers
 set list
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:\ \ ,eol:¬
 
 " Macvim default clipboard interaction is bullshit
 set clipboard=unnamed
@@ -254,14 +254,13 @@ let ruby_space_settings = 1
 " Go specific settings
 augroup golang
   au!
-  au FileType go set noexpandtab
-  au FileType go set listchars=tab:\ \ ,eol:¬
+  au FileType go setlocal noexpandtab
 augroup END
 
 " Markdown settings
 augroup markdown
   au!
-  au FileType markdown set comments=b:*,b:-,b:+,n:>h
+  au FileType markdown setlocal comments=b:*,b:-,b:+,n:>h
 augroup END
 
 " Vimscript settings
