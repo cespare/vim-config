@@ -139,3 +139,6 @@
 [submodule "bundle/stylus"]
 	path = bundle/stylus
 	url = git@github.com:cespare/vim-stylus.git
+[submodule "bundle/handlebars"]
+	path = bundle/handlebars
+	url = git://github.com/nono/vim-handlebars.git
