@@ -255,8 +255,6 @@ let ruby_space_settings = 1
 augroup golang
   au!
   au FileType go setlocal noexpandtab
-  " Fmt on save
-  au FileType go au BufWritePre <buffer> Fmt
 augroup END
 
 " Markdown settings
