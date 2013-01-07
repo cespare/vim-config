@@ -151,9 +151,9 @@ nnoremap <leader>dm :CtrlPMRU<cr>
 " Consider a Gemfile in addition to the other project root indicators
 let g:ctrlp_root_markers = ['Gemfile']
 " Start CtrlP in the project root (containing .git, etc)
-let g:ctrlp_working_path_mode = 2
+let g:ctrlp_working_path_mode = 'r'
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\.git$',
+  \ 'dir': '\v[\/]\.(git|hg)$',
   \ 'file': '\.log$',
   \ }
 
