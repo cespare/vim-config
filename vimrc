@@ -110,6 +110,8 @@ hi Search          guifg=NONE     guibg=#545449
 hi Search          ctermfg=NONE   ctermbg=22
 hi Comment         guifg=#999999  gui=NONE
 hi Comment         ctermfg=245    cterm=NONE
+hi MatchParen      ctermfg=NONE   ctermbg=236
+hi MatchParen      guifg=NONE     guibg=#3a3a3a
 
 " Show extra whitespace
 hi ExtraWhitespace guibg=#CCCCCC
