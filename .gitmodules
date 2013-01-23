@@ -127,9 +127,6 @@
 [submodule "bundle/insertlessly"]
 	path = bundle/insertlessly
 	url = git://github.com/dahu/Insertlessly.git
-[submodule "bundle/vim-session"]
-	path = bundle/vim-session
-	url = git@github.com:cespare/vim-session.git
 [submodule "bundle/go-templates"]
 	path = bundle/go-templates
 	url = git@github.com:cespare/vim-go-templates.git
