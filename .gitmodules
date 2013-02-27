@@ -139,3 +139,6 @@
 [submodule "bundle/handlebars"]
 	path = bundle/handlebars
 	url = git://github.com/nono/vim-handlebars.git
+[submodule "bundle/toml"]
+	path = bundle/toml
+	url = git@github.com:cespare/vim-toml
