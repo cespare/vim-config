@@ -142,3 +142,6 @@
 [submodule "bundle/toml"]
 	path = bundle/toml
 	url = git@github.com:cespare/vim-toml
+[submodule "bundle/ragel"]
+	path = bundle/ragel
+	url = git@github.com:jayferd/ragel.vim.git
