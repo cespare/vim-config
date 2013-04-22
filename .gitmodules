@@ -99,7 +99,7 @@
 	url = git@github.com:cespare/scala-vim-support.git
 [submodule "bundle/sbd"]
 	path = bundle/sbd
-	url = https://github.com/orftz/sbd.vim.git
+	url = git@github.com:cespare/vim-sbd.git
 [submodule "bundle/slim"]
 	path = bundle/slim
 	url = https://github.com/bbommarito/vim-slim.git
