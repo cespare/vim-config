@@ -100,9 +100,6 @@
 [submodule "bundle/sbd"]
 	path = bundle/sbd
 	url = git@github.com:cespare/vim-sbd.git
-[submodule "bundle/slim"]
-	path = bundle/slim
-	url = https://github.com/bbommarito/vim-slim.git
 [submodule "bundle/nginx"]
 	path = bundle/nginx
 	url = https://github.com/vim-scripts/nginx.vim.git
