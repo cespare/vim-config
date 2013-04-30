@@ -142,3 +142,6 @@
 [submodule "bundle/ragel"]
 	path = bundle/ragel
 	url = git@github.com:jayferd/ragel.vim.git
+[submodule "bundle/octave"]
+	path = bundle/octave
+	url = git@github.com:vim-scripts/octave.vim--.git
