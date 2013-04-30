@@ -15,4 +15,5 @@ augroup filetypedetect
   au BufNewFile,BufRead *.less setfiletype less " LESS css
   au BufNewFile,BufRead Vagrantfile setfiletype ruby
   au BufNewFile,BufRead *.rl setfiletype ragel
+  au BufNewFile,BufRead *.oct setfiletype octave
 augroup END
