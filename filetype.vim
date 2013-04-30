@@ -1,7 +1,8 @@
 augroup filetypedetect
   au BufNewFile,BufRead *.promela,*.prm,*.pr	setf promela " Promela
   au BufNewFile,BufRead *.lol setf lolcode " lolcode
-  au BufRead,BufNewFile *.m	setf objc "Objective-C
+  "au BufRead,BufNewFile *.m	setf objc "Objective-C
+  au BufRead,BufNewFile *.m	setf octave
   au BufNewFile,BufRead *.cobra setf cobra " Cobra
   au BufNewFile,BufRead *.scala,*.sbt setf scala " Scala
   au BufNewFile,BufRead *.cilk setf cpp " Cilk
