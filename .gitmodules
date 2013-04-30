@@ -138,7 +138,7 @@
 	url = git://github.com/nono/vim-handlebars.git
 [submodule "bundle/toml"]
 	path = bundle/toml
-	url = git@github.com:cespare/vim-toml
+	url = git@github.com:cespare/vim-toml.git
 [submodule "bundle/ragel"]
 	path = bundle/ragel
 	url = git@github.com:jayferd/ragel.vim.git
