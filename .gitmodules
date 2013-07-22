@@ -145,3 +145,6 @@
 [submodule "bundle/octave"]
 	path = bundle/octave
 	url = git@github.com:vim-scripts/octave.vim--.git
+[submodule "bundle/liquid"]
+	path = bundle/liquid
+	url = https://github.com/tpope/vim-liquid
