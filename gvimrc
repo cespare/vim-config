@@ -10,6 +10,7 @@ call ToggleColorColumn()
 let s:uname = system("echo -n \"$(uname)\"")
 if s:uname == "Darwin"
   set guifont=Inconsolata-dz\ for\ Powerline:h12
+  set lines=70 columns=180
 else
   set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 9
 endif
