@@ -182,6 +182,7 @@ command! DeleteTrailingWhitespace %s:\(\S*\)\s\+$:\1:
 
 " Preview the current markdown file:
 command! MarkdownDoctor !markdown_doctor % | bcat
+command! Markdownd !markdownd -w % >/dev/null &
 
 " Toggle colorcolumn
 function! ToggleColorColumn()
@@ -228,7 +229,8 @@ inoremap <C-l> <Space>=><Space>
 nnoremap <Space> :
 
 " Shortcuts for custom commands:
-noremap <leader>m :MarkdownDoctor<cr><cr>
+"noremap <leader>m :MarkdownDoctor<cr><cr>
+noremap <leader>m :Markdownd<cr><cr>
 noremap <leader>l :ToggleColorColumn<cr>
 nnoremap <leader>nw :SelectNerdTreeWindow<cr>
 
