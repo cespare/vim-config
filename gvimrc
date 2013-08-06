@@ -13,6 +13,7 @@ if s:uname == "Darwin"
   set lines=70 columns=180
 else
   set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 9
+  set lines=100 columns=200
 endif
 set linespace=1
 
