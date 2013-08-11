@@ -148,3 +148,9 @@
 [submodule "bundle/liquid"]
 	path = bundle/liquid
 	url = https://github.com/tpope/vim-liquid
+[submodule "bundle/fireplace"]
+	path = bundle/fireplace
+	url = https://github.com/tpope/vim-fireplace.git
+[submodule "bundle/clojure-static"]
+	path = bundle/clojure-static
+	url = https://github.com/guns/vim-clojure-static.git
