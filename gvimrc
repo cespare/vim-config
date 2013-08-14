@@ -1,6 +1,3 @@
-" Turn on indent guides automatically
-IndentGuidesEnable
-
 " Start NERDTree automatically.
 autocmd VimEnter * NERDTree
 
