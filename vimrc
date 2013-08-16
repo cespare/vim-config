@@ -251,6 +251,10 @@ nnoremap Q gqap
 " Format Go code
 :nnoremap <leader>nf :Fmt<cr>
 
+" I usually want to evaluate the outermost s-expr in Clojure. This is often more handy than cpp (evaluate
+" current expr).
+:nnoremap cpo :Eval<cr>
+
 " }}}
 " ------------------------------------ Language-specific Settings --------------------------------------- {{{
 " Nice ruby settings
