@@ -245,15 +245,15 @@ noremap <leader>f za
 nnoremap Q gqap
 
 " Suggestions from Learn Vimscript the Hard Way
-:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-:nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Format Go code
-:nnoremap <leader>nf :Fmt<cr>
+nnoremap <leader>nf :Fmt<cr>
 
 " I usually want to evaluate the outermost s-expr in Clojure. This is often more handy than cpp (evaluate
 " current expr).
-:nnoremap cpo :Eval<cr>
+nnoremap cpo :Eval<cr>
 
 " }}}
 " ------------------------------------ Language-specific Settings --------------------------------------- {{{
