@@ -280,3 +280,14 @@ augroup END
 
 " Coffeescript settings (related to vim-coffee-script plugin)
 vnoremap <leader>co :CoffeeCompile<cr>
+
+" Clojure settings
+let g:clojure_align_multiline_strings = 0
+let g:clojure_fuzzy_indent = 1
+let g:clojure_fuzzy_indent_patterns = "with.*,def.*,let.*,send.*"
+let g:clojure_fuzzy_indent_patterns .= ",GET,POST,PUT,PATCH,DELETE,context"   " Compojure
+let g:clojure_fuzzy_indent_patterns .= ",clone-for"                           " Enlive
+let g:clojure_fuzzy_indent_patterns .= ",select,insert,update,delete,with.*"  " Korma
+let g:clojure_fuzzy_indent_patterns .= ",fact,facts"                          " Midje
+let g:clojure_fuzzy_indent_patterns .= ",up,down"                             " Lobos
+let g:clojure_fuzzy_indent_patterns .= ",entity"                              " Custom
