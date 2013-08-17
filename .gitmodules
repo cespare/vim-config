@@ -157,6 +157,3 @@
 [submodule "bundle/ag"]
 	path = bundle/ag
 	url = https://github.com/rking/ag.vim.git
-[submodule "bundle/paredit"]
-	path = bundle/paredit
-	url = https://github.com/vim-scripts/paredit.vim.git
