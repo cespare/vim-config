@@ -216,8 +216,8 @@ noremap <leader>nn :noh<cr>
 " Make it easier to move around through blocks of text:
 noremap <C-j> gj
 noremap <C-k> gk
-noremap U 30k
-noremap D 30j
+noremap <expr> <C-h> (&scroll-2).'k'
+noremap <expr> <C-l> (&scroll+2).'j'
 
 " Close a buffer without messing with the windows (vim-bclose)
 "nmap <leader>q <Plug>Kwbd
