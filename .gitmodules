@@ -117,7 +117,7 @@
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
 [submodule "bundle/golang"]
 	path = bundle/golang
-	url = https://github.com/jnwhiteh/vim-golang.git
+	url = git@github.com:cespare/vim-golang.git
 [submodule "bundle/endwise"]
 	path = bundle/endwise
 	url = git@github.com:cespare/vim-endwise.git
