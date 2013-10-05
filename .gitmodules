@@ -157,3 +157,9 @@
 [submodule "bundle/ag"]
 	path = bundle/ag
 	url = https://github.com/rking/ag.vim.git
+[submodule "bundle/yaml"]
+	path = bundle/yaml
+	url = https://github.com/avakhov/vim-yaml.git
+[submodule "bundle/nimrod"]
+	path = bundle/nimrod
+	url = git://github.com/zah/nimrod.vim.git

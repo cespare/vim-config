@@ -291,3 +291,14 @@ let g:clojure_fuzzy_indent_patterns .= ",select,insert,update,delete,with.*"  " 
 let g:clojure_fuzzy_indent_patterns .= ",fact,facts"                          " Midje
 let g:clojure_fuzzy_indent_patterns .= ",up,down"                             " Lobos
 let g:clojure_fuzzy_indent_patterns .= ",entity"                              " Custom
+
+" Nimrod settings
+fun! JumpToDef()
+  if exists("*GotoDefinition_" . &filetype)
+    call GotoDefinition_{&filetype}()
+  else
+    exe "norm! \<C-]>"
+  endif
+endf
+nn <M-g> :call JumpToDef()<cr>
+ino <M-g> <esc>:call JumpToDef()<cr>i
