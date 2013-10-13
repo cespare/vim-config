@@ -163,3 +163,6 @@
 [submodule "bundle/nimrod"]
 	path = bundle/nimrod
 	url = git://github.com/zah/nimrod.vim.git
+[submodule "bundle/sneak"]
+	path = bundle/sneak
+	url = git://github.com/justinmk/vim-sneak.git
