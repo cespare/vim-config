@@ -166,7 +166,13 @@ let g:syntastic_mode_map = { 'mode': 'passive',
                            \ }
 
 " Insertlessly settings
-let g:insertlessly_insert_spaces = 0 " I nmap space to :
+" I nmap space to :
+let g:insertlessly_insert_spaces = 0
+" I don't like deleting newlines when leaving insert mode (and I use DeleteTrailingWhitespace to do the whole
+" file).
+let g:insertlessly_cleanup_trailing_ws = 0
+let g:insertlessly_cleanup_all_ws = 0
+
 
 " Powerline settings
 let g:Powerline_symbols = 'fancy'
