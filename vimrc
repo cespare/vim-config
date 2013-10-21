@@ -219,6 +219,9 @@ autocmd Filetype go command! Fmt call Goformat()
 noremap <F6> :b#<cr>
 noremap <leader>nn :noh<cr>
 
+" Make Y be like C and D (yank to end of line), a mapping so obvious it's recommended by :help Y
+nnoremap Y y$
+
 " Make it easier to move around through blocks of text:
 noremap <C-j> gj
 noremap <C-k> gk
