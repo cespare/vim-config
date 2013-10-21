@@ -183,9 +183,20 @@ let g:session_autoload = 'yes' " Automatically load session if file exists; don'
 let g:autosave = 'yes' " Automatically save an open session on exit; don't prompt
 
 " }}}
-" ---------------------------------------- Custom Commands ---------------------------------------------- {{{
-" A command to delete all trailing whitespace from a file.
-command! DeleteTrailingWhitespace %s:\(\S*\)\s\+$:\1:
+" ---------------------------------- Custom Commands and Functions -------------------------------------- {{{
+" A function to delete all trailing whitespace from a file. (From
+" http://vimcasts.org/episodes/tidying-whitespace/)
+function! <SID>DeleteTrailingWhitespace()
+  " Preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Do the business:
+  %s/\s\+$//e
+  " Clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
+endfunction
 
 " Preview the current markdown file:
 command! MarkdownDoctor !markdown_doctor % | bcat
@@ -215,9 +226,11 @@ autocmd Filetype go command! Fmt call Goformat()
 
 " }}}
 " ------------------------------------------ My Mappings ------------------------------------------------ {{{
-" Mappings:
-noremap <F6> :b#<cr>
+" Quickly un-highlight search terms
 noremap <leader>nn :noh<cr>
+
+" Quickly delete trailing whitespace (with cursor position restore)
+nnoremap <leader>$ :call <SID>DeleteTrailingWhitespace()<cr>
 
 " Make Y be like C and D (yank to end of line), a mapping so obvious it's recommended by :help Y
 nnoremap Y y$
