@@ -1,7 +1,7 @@
 " This is my .vimrc...I use gvim on linux, macvim on Mac OS. 7.3 required.
 
 " ----------------------------------------- Configure Pathogen ------------------------------------------ {{{
-call pathogen#infect()
+execute pathogen#infect()
 
 " }}}
 " ----------------------------------------- Basic Settings ---------------------------------------------- {{{
