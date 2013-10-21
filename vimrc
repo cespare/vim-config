@@ -294,6 +294,7 @@ let g:clojure_fuzzy_indent_patterns .= ",select,insert,update,delete,with.*"  " 
 let g:clojure_fuzzy_indent_patterns .= ",fact,facts"                          " Midje
 let g:clojure_fuzzy_indent_patterns .= ",up,down"                             " Lobos
 let g:clojure_fuzzy_indent_patterns .= ",entity"                              " Custom
+let g:clojure_fuzzy_indent_patterns .= ",check"                               " Custom
 
 " Nimrod settings
 fun! JumpToDef()
