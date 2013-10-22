@@ -235,6 +235,10 @@ nnoremap <leader>$ :call <SID>DeleteTrailingWhitespace()<cr>
 " Make Y be like C and D (yank to end of line), a mapping so obvious it's recommended by :help Y
 nnoremap Y y$
 
+" ctrl-w is a little hard to get to, but super useful. Let's use an easier shortcut for deleting a word back
+" in insert mode.
+inoremap hh <c-w>
+
 " Make it easier to move around through blocks of text:
 noremap <C-j> gj
 noremap <C-k> gk
