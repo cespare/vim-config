@@ -19,9 +19,6 @@
 [submodule "bundle/restore-position"]
 	path = bundle/restore-position
 	url = https://github.com/now/vim-restore-position.git
-[submodule "bundle/markdown"]
-	path = bundle/markdown
-	url = git@github.com:cespare/vim-markdown.git
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/tsaleh/vim-matchit.git
@@ -166,3 +163,6 @@
 [submodule "bundle/sneak"]
 	path = bundle/sneak
 	url = git://github.com/justinmk/vim-sneak.git
+[submodule "bundle/markdown"]
+	path = bundle/markdown
+	url = git://github.com/tpope/vim-markdown.git
