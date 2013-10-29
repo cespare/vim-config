@@ -182,6 +182,9 @@ let g:session_directory = '.'
 let g:session_autoload = 'yes' " Automatically load session if file exists; don't prompt
 let g:autosave = 'yes' " Automatically save an open session on exit; don't prompt
 
+" easy-align settings
+vnoremap <leader>a :EasyAlign<Enter>
+
 " }}}
 " ---------------------------------- Custom Commands and Functions -------------------------------------- {{{
 " A function to delete all trailing whitespace from a file. (From
