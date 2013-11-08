@@ -219,14 +219,6 @@ command! ToggleColorColumn call ToggleColorColumn()
 " Quickly select the NERDTree window
 command! SelectNerdTreeWindow execute "normal " . bufwinnr("NERD_tree_1") . "\<C-w>w"
 
-" Use gofmt to format go code
-function Goformat()
-  let regel=line(".")
-  %!gofmt
-  call cursor(regel, 1)
-endfunction
-autocmd Filetype go command! Fmt call Goformat()
-
 " }}}
 " ------------------------------------------ My Mappings ------------------------------------------------ {{{
 " Quickly un-highlight search terms
