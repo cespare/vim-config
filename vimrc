@@ -34,7 +34,9 @@ set undofile
 set backspace=indent,eol,start
 set incsearch
 set nojoinspaces
-set noballooneval " annoying
+if exists("&ballooneval")
+  set noballooneval " annoying
+endif
 
 " When completing, don't automatically select the first choice, but instead just insert the longest common
 " text.
