@@ -72,7 +72,7 @@ noremap K <Nop>
 set list
 set listchars=tab:\ \ ,eol:¬
 
-" Macvim default clipboard interaction is bullshit
+" Unify vim's default register and the system clipboard
 set clipboard=unnamed
 
 " Ensure the temp dirs exist
