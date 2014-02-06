@@ -269,6 +269,8 @@ nnoremap <leader>nf :Fmt<cr>
 " current expr).
 nnoremap cpo :Eval<cr>
 
+nnoremap <leader>sc :Scratch<cr>
+
 " }}}
 " ------------------------------------ Language-specific Settings --------------------------------------- {{{
 " Nice ruby settings
