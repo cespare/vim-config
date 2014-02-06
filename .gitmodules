@@ -166,3 +166,6 @@
 [submodule "bundle/easy-align"]
 	path = bundle/easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "bundle/scratch"]
+	path = bundle/scratch
+	url = https://github.com/mtth/scratch.vim.git

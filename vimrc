@@ -187,6 +187,10 @@ let g:autosave = 'yes' " Automatically save an open session on exit; don't promp
 " easy-align settings
 vnoremap <leader>a :EasyAlign<Enter>
 
+" Scratch (github.com/matth/scratch.vim)
+let g:scratch_top = 0
+let g:scratch_height = 25
+
 " }}}
 " ---------------------------------- Custom Commands and Functions -------------------------------------- {{{
 " A function to delete all trailing whitespace from a file. (From
