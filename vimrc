@@ -175,14 +175,8 @@ let g:insertlessly_insert_spaces = 0
 let g:insertlessly_cleanup_trailing_ws = 0
 let g:insertlessly_cleanup_all_ws = 0
 
-
 " Powerline settings
 let g:Powerline_symbols = 'fancy'
-
-" vim-session settings
-let g:session_directory = '.'
-let g:session_autoload = 'yes' " Automatically load session if file exists; don't prompt
-let g:autosave = 'yes' " Automatically save an open session on exit; don't prompt
 
 " easy-align settings
 vnoremap <leader>a :EasyAlign<Enter>
