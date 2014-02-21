@@ -169,3 +169,6 @@
 [submodule "bundle/scratch"]
 	path = bundle/scratch
 	url = https://github.com/mtth/scratch.vim.git
+[submodule "bundle/godef"]
+	path = bundle/godef
+	url = https://github.com/dgryski/vim-godef
