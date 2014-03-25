@@ -185,6 +185,9 @@ vnoremap <leader>a :EasyAlign<Enter>
 let g:scratch_top = 0
 let g:scratch_height = 25
 
+" Gofmt (use goimports instead)
+let g:gofmt_command = "goimports"
+
 " }}}
 " ---------------------------------- Custom Commands and Functions -------------------------------------- {{{
 " A function to delete all trailing whitespace from a file. (From
