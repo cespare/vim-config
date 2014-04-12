@@ -297,6 +297,12 @@ augroup filetype_vim
   au FileType vim setlocal foldmethod=marker
 augroup END
 
+" Git commit messages
+augroup gitcommit
+  au!
+  au FileType gitcommit setlocal textwidth=72
+augroup END
+
 " Coffeescript settings (related to vim-coffee-script plugin)
 vnoremap <leader>co :CoffeeCompile<cr>
 
