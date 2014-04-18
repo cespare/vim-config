@@ -175,3 +175,6 @@
 [submodule "bundle/keepcase"]
 	path = bundle/keepcase
 	url = https://github.com/vim-scripts/keepcase.vim.git
+[submodule "bundle/rust"]
+	path = bundle/rust
+	url = https://github.com/wting/rust.vim.git
