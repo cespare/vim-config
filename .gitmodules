@@ -172,3 +172,9 @@
 [submodule "bundle/rust"]
 	path = bundle/rust
 	url = https://github.com/wting/rust.vim.git
+[submodule "bundle/yaml"]
+	path = bundle/yaml
+	url = git@github.com:ingydotnet/yaml-vim.git
+[submodule "bundle/ansible-yaml"]
+	path = bundle/ansible-yaml
+	url = git@github.com:chase/vim-ansible-yaml
