@@ -73,7 +73,7 @@ set list
 set listchars=tab:\ \ ,eol:¬
 
 " Unify vim's default register and the system clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " Ensure the temp dirs exist
 if !isdirectory($HOME . "/.vim/tmp")
