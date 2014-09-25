@@ -178,3 +178,6 @@
 [submodule "bundle/ansible-yaml"]
 	path = bundle/ansible-yaml
 	url = git@github.com:chase/vim-ansible-yaml
+[submodule "bundle/glsl"]
+	path = bundle/glsl
+	url = https://github.com/tikhomirov/vim-glsl.git
