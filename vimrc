@@ -274,6 +274,9 @@ nnoremap cpo :Eval<cr>
 
 nnoremap <leader>sc :Scratch<cr>
 
+" Ag
+nnoremap <leader>a :Ag 
+
 " }}}
 " ------------------------------------ Language-specific Settings --------------------------------------- {{{
 " Nice ruby settings
