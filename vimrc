@@ -243,6 +243,9 @@ noremap <expr> <C-l> (&scroll+2).'j'
 "nmap <leader>q <Plug>Kwbd
 nnoremap <silent> <leader>q :Sbd<cr>
 
+" Close the quickfix window
+nnoremap <leader>x :cclose<cr>
+
 " No colon in command mode to enter an ex command; just use space
 nnoremap <Space> :
 
