@@ -58,9 +58,6 @@
 [submodule "bundle/autotag"]
 	path = bundle/autotag
 	url = https://github.com/vim-scripts/AutoTag.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = https://github.com/msanders/snipmate.vim.git
 [submodule "bundle/cespare-snippets"]
 	path = bundle/cespare-snippets
 	url = git@github.com:cespare/cespare-snippets.git
@@ -178,3 +175,12 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule "bundle/tlib"]
+	path = bundle/tlib
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "bundle/addon-mw-utils"]
+	path = bundle/addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
