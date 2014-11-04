@@ -106,9 +106,6 @@
 [submodule "bundle/indent-guides"]
 	path = bundle/indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
-[submodule "bundle/golang"]
-	path = bundle/golang
-	url = git@github.com:cespare/vim-golang.git
 [submodule "bundle/endwise"]
 	path = bundle/endwise
 	url = git@github.com:cespare/vim-endwise.git
@@ -163,9 +160,6 @@
 [submodule "bundle/scratch"]
 	path = bundle/scratch
 	url = https://github.com/mtth/scratch.vim.git
-[submodule "bundle/godef"]
-	path = bundle/godef
-	url = https://github.com/dgryski/vim-godef
 [submodule "bundle/keepcase"]
 	path = bundle/keepcase
 	url = https://github.com/vim-scripts/keepcase.vim.git
@@ -181,3 +175,6 @@
 [submodule "bundle/glsl"]
 	path = bundle/glsl
 	url = https://github.com/tikhomirov/vim-glsl.git
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
