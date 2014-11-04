@@ -134,7 +134,7 @@ endif
 " }}}
 " -------------------------------------- Plugin-specific Settings --------------------------------------- {{{
 " Gundo settings
-nnoremap <leader>g :GundoToggle<cr>
+nnoremap <leader>gu :GundoToggle<cr>
 
 " NERDTree settings
 let g:NERDTreeChDirMode=2
@@ -265,8 +265,11 @@ nnoremap Q gqap
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-" Format Go code
-nnoremap <leader>nf :Fmt<cr>
+" Go (vim-go) shortcuts and settings
+au FileType go nmap <leader>gi <Plug>(go-info)
+au FileType go nmap <leader>gd <Plug>(go-doc)
+au FileType go nmap <leader>gr <Plug>(go-rename)
+let g:go_fmt_command = "goimports"
 
 " I usually want to evaluate the outermost s-expr in Clojure. This is often more handy than cpp (evaluate
 " current expr).
