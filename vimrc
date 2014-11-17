@@ -1,5 +1,8 @@
 " This is my .vimrc...I use gvim on linux, macvim on Mac OS. 7.3 required.
 
+" Some settings are OS-dependent
+let s:uname = system("echo -n \"$(uname)\"")
+
 " ----------------------------------------- Configure Pathogen ------------------------------------------ {{{
 execute pathogen#infect()
 
@@ -73,7 +76,10 @@ set list
 set listchars=tab:\ \ ,eol:¬
 
 " Unify vim's default register and the system clipboard
-set clipboard=unnamedplus
+set clipboard=unnamed
+if s:uname == "Linux"
+  set clipboard=unnamedplus
+endif
 
 " Ensure the temp dirs exist
 if !isdirectory($HOME . "/.vim/tmp")
@@ -126,7 +132,6 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 " Unset the background color on Linux because it doesn't play nicely with Terminator
-let s:uname = system("echo -n \"$(uname)\"")
 if s:uname == "Linux"
   hi Normal ctermbg=NONE
 endif
