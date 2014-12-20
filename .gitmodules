@@ -172,9 +172,6 @@
 [submodule "bundle/glsl"]
 	path = bundle/glsl
 	url = https://github.com/tikhomirov/vim-glsl.git
-[submodule "bundle/vim-go"]
-	path = bundle/vim-go
-	url = https://github.com/fatih/vim-go.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = https://github.com/garbas/vim-snipmate.git
@@ -187,3 +184,6 @@
 [submodule "bundle/python-syntax"]
 	path = bundle/python-syntax
 	url = https://github.com/hdima/python-syntax.git
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = git@github.com:cespare/vim-go
