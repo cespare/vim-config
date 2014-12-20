@@ -117,6 +117,7 @@ hi Search          ctermfg=NONE   ctermbg=22
 hi Comment         ctermfg=245    cterm=NONE
 hi MatchParen      ctermfg=NONE   ctermbg=237
 hi Error           ctermfg=NONE   ctermbg=239
+hi LineNr      ctermfg=245   ctermbg=235
 
 " Show extra whitespace
 hi ExtraWhitespace guibg=#CCCCCC
