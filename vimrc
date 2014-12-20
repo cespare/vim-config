@@ -278,6 +278,8 @@ au FileType go nmap <leader>gi <Plug>(go-info)
 au FileType go nmap <leader>gd <Plug>(go-doc)
 au FileType go nmap <leader>gr <Plug>(go-rename)
 let g:go_fmt_command = "goimports"
+" I'm using a more general mechanism for this
+let g:go_highlight_trailing_whitespace_error = 0
 
 " I usually want to evaluate the outermost s-expr in Clojure. This is often more handy than cpp (evaluate
 " current expr).
