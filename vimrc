@@ -109,18 +109,18 @@ set sessionoptions-=buffers
 set t_Co=256
 set background=dark
 colorscheme lucius
+LuciusBlack
 
 " Adjust colors as necessary
-hi ColorColumn     guibg=#444444
-hi ColorColumn     ctermbg=8
-hi IncSearch       guifg=NONE     guibg=#353E44
 hi IncSearch       ctermfg=NONE   ctermbg=67
-hi Search          guifg=NONE     guibg=#545449
 hi Search          ctermfg=NONE   ctermbg=22
-hi Comment         guifg=#999999  gui=NONE
 hi Comment         ctermfg=245    cterm=NONE
 hi MatchParen      ctermfg=NONE   ctermbg=236
-hi MatchParen      guifg=NONE     guibg=#3a3a3a
+
+" Unset the background color on Linux because it doesn't play nicely with Terminator
+"if s:uname == "Linux"
+  "hi Normal ctermbg=NONE
+"endif
 
 " Show extra whitespace
 hi ExtraWhitespace guibg=#CCCCCC
@@ -130,11 +130,6 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
-
-" Unset the background color on Linux because it doesn't play nicely with Terminator
-if s:uname == "Linux"
-  hi Normal ctermbg=NONE
-endif
 
 " }}}
 " -------------------------------------- Plugin-specific Settings --------------------------------------- {{{

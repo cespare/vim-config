@@ -28,3 +28,12 @@ set nomousehide
 
 " One of my plugin turns this on, and it's annoying
 set noballooneval
+
+" Different Lucius variant
+LuciusDark
+
+" Color adjustments
+hi IncSearch       guifg=NONE     guibg=#353E44
+hi Search          guifg=NONE     guibg=#545449
+hi Comment         guifg=#999999  gui=NONE
+hi MatchParen      guifg=NONE     guibg=#3a3a3a
