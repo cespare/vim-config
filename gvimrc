@@ -30,10 +30,12 @@ set nomousehide
 set noballooneval
 
 " Different Lucius variant
-LuciusDark
+LuciusBlack
 
 " Color adjustments
+hi Normal                         guibg=#191919
 hi IncSearch       guifg=NONE     guibg=#353E44
 hi Search          guifg=NONE     guibg=#545449
 hi Comment         guifg=#999999  gui=NONE
-hi MatchParen      guifg=NONE     guibg=#3a3a3a
+hi MatchParen      guifg=NONE     guibg=#2c5475
+hi Error           guifg=NONE     guibg=#4e4e4e

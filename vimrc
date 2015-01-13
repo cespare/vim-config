@@ -115,12 +115,8 @@ LuciusBlack
 hi IncSearch       ctermfg=NONE   ctermbg=67
 hi Search          ctermfg=NONE   ctermbg=22
 hi Comment         ctermfg=245    cterm=NONE
-hi MatchParen      ctermfg=NONE   ctermbg=236
-
-" Unset the background color on Linux because it doesn't play nicely with Terminator
-"if s:uname == "Linux"
-  "hi Normal ctermbg=NONE
-"endif
+hi MatchParen      ctermfg=NONE   ctermbg=237
+hi Error           ctermfg=NONE   ctermbg=239
 
 " Show extra whitespace
 hi ExtraWhitespace guibg=#CCCCCC
