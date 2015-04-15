@@ -130,6 +130,9 @@ autocmd BufWinLeave * call clearmatches()
 
 " }}}
 " -------------------------------------- Plugin-specific Settings --------------------------------------- {{{
+"  Powerline is installed as a top-level repo (submodule of dotfiles).
+set rtp+=$HOME/scripts/powerline/powerline/bindings/vim
+
 " Gundo settings
 nnoremap <leader>gu :GundoToggle<cr>
 
