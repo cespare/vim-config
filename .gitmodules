@@ -16,9 +16,6 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundle/restore-position"]
-	path = bundle/restore-position
-	url = https://github.com/now/vim-restore-position.git
 [submodule "bundle/bclose"]
 	path = bundle/bclose
 	url = git@github.com:cespare/vim-bclose.git
