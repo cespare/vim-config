@@ -103,6 +103,15 @@ set sessionoptions-=help
 " Don't save hidden buffers -- only save the visible ones.
 set sessionoptions-=buffers
 
+" Viminfo saves/restores editing metadata in ~/.viminfo.
+" '100   Save marks for the last 100 edited files
+" f1     Store global marks
+" <500   Save max of 500 lines of each register
+" :100   Save 100 lines of command-line history
+" /100   Save 100 searches
+" h      Disable hlsearch when starting
+set viminfo='1000,f1,<500,:100,/100,h
+
 " Restore position when reopening a file.
 " http://vim.wikia.com/wiki/Restore_cursor_to_file_position_in_previous_editing_session
 function! ResCur()
