@@ -29,7 +29,7 @@ set expandtab
 set smarttab
 set ts=2
 set sw=2
-set sts=2
+set sts=-1
 set laststatus=2
 set ignorecase
 set smartcase
@@ -316,6 +316,11 @@ let ruby_space_settings = 1
 augroup golang
   au!
   au FileType go setlocal noexpandtab
+  au FileType go setlocal textwidth=80
+  au FileType go setlocal wrapmargin=80
+  au FileType go setlocal colorcolumn=80
+  au FileType go setlocal ts=8
+  au FileType go setlocal sw=8
 augroup END
 
 " Markdown settings
