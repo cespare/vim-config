@@ -241,6 +241,20 @@ function! ToggleColorColumn()
 endfunction
 command! ToggleColorColumn call ToggleColorColumn()
 
+" Set width to 80
+function! ToggleWidth()
+  if &textwidth == 80
+    set textwidth=110
+  else
+    set textwidth=80
+  endif
+  let &wrapmargin = &textwidth
+  if &colorcolumn > 0
+    let &colorcolumn = &wrapmargin
+  endif
+endfunction
+command! ToggleWidth call ToggleWidth()
+
 " Quickly select the NERDTree window
 command! SelectNerdTreeWindow execute "normal " . bufwinnr("NERD_tree_1") . "\<C-w>w"
 
@@ -275,6 +289,7 @@ nnoremap <Space> :
 "noremap <leader>m :MarkdownDoctor<cr><cr>
 noremap <leader>m :Markdownd<cr><cr>
 noremap <leader>l :ToggleColorColumn<cr>
+noremap <leader>8 :ToggleWidth<cr>
 nnoremap <leader>nw :SelectNerdTreeWindow<cr>
 
 " Git blame shortcut (fugitive)

@@ -136,9 +136,6 @@
 [submodule "bundle/sneak"]
 	path = bundle/sneak
 	url = git://github.com/justinmk/vim-sneak.git
-[submodule "bundle/markdown"]
-	path = bundle/markdown
-	url = git://github.com/tpope/vim-markdown.git
 [submodule "bundle/easy-align"]
 	path = bundle/easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
@@ -178,3 +175,6 @@
 [submodule "bundle/hexmode"]
 	path = bundle/hexmode
 	url = https://github.com/fidian/hexmode
+[submodule "bundle/markdown"]
+	path = bundle/markdown
+	url = https://github.com/tpope/vim-markdown
