@@ -184,11 +184,6 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\.log$',
   \ }
 
-" Syntastic settings
-let g:syntastic_mode_map = { 'mode': 'passive',
-                           \ 'active_filetypes': ['ruby', 'coffee'],
-                           \ }
-
 " Insertlessly settings
 " I nmap space to :
 let g:insertlessly_insert_spaces = 0
