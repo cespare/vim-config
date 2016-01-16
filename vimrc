@@ -327,12 +327,11 @@ let ruby_space_settings = 1
 " Go specific settings
 augroup golang
   au!
-  au FileType go setlocal noexpandtab
-  au FileType go setlocal textwidth=80
-  au FileType go setlocal wrapmargin=80
-  au FileType go setlocal colorcolumn=80
-  au FileType go setlocal ts=8
-  au FileType go setlocal sw=8
+  au FileType go,asm setlocal textwidth=80
+  au FileType go,asm setlocal wrapmargin=80
+  au FileType go,asm setlocal colorcolumn=80
+  au FileType go,asm setlocal ts=8
+  au FileType go,asm setlocal sw=8
 augroup END
 
 " Markdown settings
