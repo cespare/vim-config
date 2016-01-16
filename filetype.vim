@@ -17,6 +17,5 @@ augroup filetypedetect
   au BufNewFile,BufRead Vagrantfile setfiletype ruby
   au BufNewFile,BufRead *.rl setfiletype ragel
   au BufNewFile,BufRead *.oct setfiletype octave
-  au BufNewFile,BufRead *.s setfiletype asm
   au BufNewFile,BufRead *.tpl setfiletype gotexttmpl
 augroup END
