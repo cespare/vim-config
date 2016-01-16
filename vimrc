@@ -164,8 +164,13 @@ let g:NERDChristmasTree=1
 nnoremap <leader>t :NERDTreeToggle<cr><C-w>=
 nnoremap <leader>nf :NERDTreeFind<cr>
 
-" Stupid NERDCommenter warning
+" Stupid NERDCommenter warning.
 let NERDShutUp=1
+
+" Override bad NERDCommenter defaults.
+let g:NERDCustomDelimiters = {
+      \ 'asm': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
+      \ }
 
 " CtrlP Settings
 " Disable default mapping
