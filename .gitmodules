@@ -19,9 +19,6 @@
 [submodule "bundle/bclose"]
 	path = bundle/bclose
 	url = git@github.com:cespare/vim-bclose.git
-[submodule "bundle/actionscript-syntax"]
-	path = bundle/actionscript-syntax
-	url = https://github.com/vim-scripts/actionscript.vim--Cuss.git
 [submodule "bundle/zenburn-theme"]
 	path = bundle/zenburn-theme
 	url = git://github.com/cespare/zenburn.git
@@ -40,9 +37,6 @@
 [submodule "bundle/coffeescript"]
 	path = bundle/coffeescript
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "bundle/mxml-syntax"]
-	path = bundle/mxml-syntax
-	url = git@github.com:cespare/mxml.vim.git
 [submodule "bundle/dtd-syntax"]
 	path = bundle/dtd-syntax
 	url = git@github.com:cespare/dtd.vim.git
@@ -58,9 +52,6 @@
 [submodule "pathogen"]
 	path = pathogen
 	url = https://github.com/tpope/vim-pathogen.git
-[submodule "bundle/abolish"]
-	path = bundle/abolish
-	url = https://github.com/tpope/vim-abolish.git
 [submodule "bundle/vidir-ls"]
 	path = bundle/vidir-ls
 	url = https://github.com/trapd00r/vim-syntax-vidir-ls.git
