@@ -127,19 +127,9 @@ augroup resCur
 augroup END
 
 " }}}
-" ----------------------------- Colorscheme Settings (assume Lucius) ------------------------------------ {{{
+" ----------------------------- Colorscheme Settings ---------------------------------------------------- {{{
 set t_Co=256
-set background=dark
-colorscheme lucius
-LuciusBlack
-
-" Adjust colors as necessary
-hi IncSearch       ctermfg=NONE   ctermbg=67
-hi Search          ctermfg=NONE   ctermbg=22
-hi Comment         ctermfg=245    cterm=NONE
-hi MatchParen      ctermfg=NONE   ctermbg=237
-hi Error           ctermfg=NONE   ctermbg=239
-hi LineNr      ctermfg=245   ctermbg=235
+colorscheme cespare
 
 " Show extra whitespace
 hi ExtraWhitespace guibg=#CCCCCC
