@@ -71,10 +71,6 @@ endif
 " man pages from within vim anyway.)
 noremap K <Nop>
 
-" Textmate-style invisible char markers
-set list
-set listchars=tab:\ \ ,eol:¬
-
 " Unify vim's default register and the system clipboard
 set clipboard=unnamed
 if s:uname == "Linux"

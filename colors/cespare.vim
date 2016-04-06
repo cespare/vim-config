@@ -45,7 +45,7 @@ for s:item in s:normal_items + s:bold_items + s:underline_items + s:undercurl_it
 endfor
 
 hi clear Normal
-hi Normal       ctermfg=NONE  ctermbg=NONE  guifg=#d7d7d7 guibg=#191919 
+hi Normal       ctermfg=NONE  ctermbg=NONE  guifg=#d7d7d7 guibg=#191919
 hi IncSearch    ctermfg=NONE  ctermbg=24    guifg=NONE    guibg=#005f87
 hi Search       ctermfg=NONE  ctermbg=24    guifg=NONE    guibg=#005f87
 hi Comment      ctermfg=246   cterm=NONE    guifg=#949494 gui=NONE
@@ -54,11 +54,17 @@ hi Error        ctermfg=NONE  ctermbg=239   guifg=NONE    guibg=#4e4e4e
 hi LineNr       ctermfg=245   ctermbg=235   guifg=#8a8a8a guibg=#404040
 hi Cursor                                   guifg=bg      guibg=#87afd7
 hi ColorColumn  ctermfg=NONE  ctermbg=237   guifg=NONE    guibg=#3a3a3a
-hi Constant     ctermfg=187                 guifg=#d7d7af
+hi Constant     ctermfg=150                 guifg=#afd787
 hi VertSplit    ctermfg=236   ctermbg=244   guifg=#303030 guibg=#808080
 hi CursorLine   ctermfg=NONE  ctermbg=238   guifg=NONE    guibg=#444444
 hi Visual       ctermfg=NONE  ctermbg=24    guifg=NONE    guibg=#005f87
 hi Todo         ctermfg=185   ctermbg=NONE  guifg=#d7d75f guibg=NONE
+hi Pmenu        ctermfg=NONE  ctermbg=249   guifg=bg      guibg=#b2b2b2
+hi PmenuSel     ctermfg=NONE  ctermbg=24    guifg=fg      guibg=#005f87
+hi PmenuSbar    ctermfg=249   ctermbg=252   guifg=#b2b2b2 guibg=#d0d0d0
+hi PmenuThumb   ctermfg=NONE  ctermbg=244   guifg=fg      guibg=#808080
+
+"hi Special      ctermfg=228                 guifg=#ffff87
 
 "hi ModeMsg      guifg=fg
 "hi Question     guifg=fg
@@ -67,7 +73,6 @@ hi Todo         ctermfg=185   ctermbg=NONE  guifg=#d7d75f guibg=NONE
 "hi Directory    guifg=#afd7af
 "hi Identifier   guifg=#afd787
 "hi PreProc      guifg=#87d7af
-"hi Special      guifg=#d7afd7
 "hi Statement    guifg=#87d7ff
 "hi Title        guifg=#5fafd7
 "hi Type         guifg=#87d7d7
@@ -81,9 +86,6 @@ hi Todo         ctermfg=185   ctermbg=NONE  guifg=#d7d75f guibg=NONE
 "hi ErrorMsg     guifg=#ff5f5f
 "hi MoreMsg      guifg=#5fd7d7
 "hi WarningMsg   guifg=#d7875f
-"hi Pmenu        guifg=bg
-"hi PmenuSel     guifg=fg
-"hi PmenuThumb   guifg=fg
 "hi StatusLine   guifg=bg
 "hi TabLine      guifg=bg
 "hi TabLineSel   guifg=fg
@@ -91,16 +93,12 @@ hi Todo         ctermfg=185   ctermbg=NONE  guifg=#d7d75f guibg=NONE
 "hi CursorLineNr guifg=#626262   guibg=#444444
 "hi FoldColumn                   guibg=#4e4e4e
 "hi Folded                       guibg=#4e4e4e
-"hi PmenuSel                     guibg=#005f87
 "hi SignColumn                   guibg=#4e4e4e
 "hi StatusLineNC guifg=#444444
 "hi TabLineFill  guifg=#444444
 "hi WildMenu                     guibg=#005f87
 "hi FoldColumn   guifg=#bcbcbc
 "hi Folded       guifg=#bcbcbc
-"hi Pmenu                        guibg=#b2b2b2
-"hi PmenuSbar    guifg=#b2b2b2   guibg=#d0d0d0
-"hi PmenuThumb                   guibg=#808080
 "hi SignColumn   guifg=#b2b2b2
 "hi StatusLine                   guibg=#b2b2b2
 "hi StatusLineNC                 guibg=#b2b2b2
