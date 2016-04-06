@@ -297,6 +297,7 @@ au FileType go nmap <leader>gi <Plug>(go-info)
 au FileType go nmap <leader>gd <Plug>(go-doc)
 au FileType go nmap <leader>gr <Plug>(go-rename)
 let g:go_fmt_command = "goimports"
+let g:go_highlight_format_strings = 0
 " I'm using a more general mechanism for this
 let g:go_highlight_trailing_whitespace_error = 0
 
