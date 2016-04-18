@@ -169,3 +169,6 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go
+[submodule "bundle/cljfmt"]
+	path = bundle/cljfmt
+	url = git@github.com:dmac/vim-cljfmt
