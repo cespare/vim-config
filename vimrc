@@ -297,6 +297,9 @@ let g:go_highlight_format_strings = 0
 " I'm using a more general mechanism for this
 let g:go_highlight_trailing_whitespace_error = 0
 
+" For now, don't auto-format clojure.
+let g:cljfmt_on_save = 0
+
 " I usually want to evaluate the outermost s-expr in Clojure. This is often more handy than cpp (evaluate
 " current expr).
 nnoremap cpo :Eval<cr>
