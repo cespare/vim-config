@@ -150,13 +150,14 @@ let g:NERDChristmasTree=1
 nnoremap <leader>t :NERDTreeToggle<cr><C-w>=
 nnoremap <leader>nf :NERDTreeFind<cr>
 
-" Stupid NERDCommenter warning.
-let NERDShutUp=1
-
 " Override bad NERDCommenter defaults.
 let g:NERDCustomDelimiters = {
       \ 'asm': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
       \ }
+
+" Make NERDCommenter comment out from the start of the line,
+" rather than the start of text.
+let g:NERDDefaultAlign = 'left'
 
 " CtrlP Settings
 " Disable default mapping
