@@ -141,6 +141,7 @@ let g:NERDTreeChDirMode=2
 let g:NERDChristmasTree=1
 nnoremap <leader>t :NERDTreeToggle<cr><C-w>=
 nnoremap <leader>nf :NERDTreeFind<cr>
+nnoremap <leader>nw :NERDTreeFocus<cr>
 
 " Override bad NERDCommenter defaults.
 let g:NERDCustomDelimiters = {
@@ -231,9 +232,6 @@ function! ToggleWidth()
 endfunction
 command! ToggleWidth call ToggleWidth()
 
-" Quickly select the NERDTree window
-command! SelectNerdTreeWindow execute "normal " . bufwinnr("NERD_tree_1") . "\<C-w>w"
-
 " }}}
 " ------------------------------------------ My Mappings ------------------------------------------------ {{{
 " Quickly un-highlight search terms
@@ -266,7 +264,6 @@ nnoremap <Space> :
 noremap <leader>m :Markdownd<cr><cr>
 noremap <leader>l :ToggleColorColumn<cr>
 noremap <leader>8 :ToggleWidth<cr>
-nnoremap <leader>nw :SelectNerdTreeWindow<cr>
 
 " Git blame shortcut (fugitive)
 noremap <leader>bl :Gblame<cr>

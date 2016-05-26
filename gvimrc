@@ -1,6 +1,3 @@
-" Start NERDTree automatically.
-autocmd VimEnter * NERDTree
-
 call ToggleColorColumn()
 
 " My favorite coding font
