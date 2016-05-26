@@ -28,3 +28,8 @@ set nomousehide
 
 " One of my plugin turns this on, and it's annoying
 set noballooneval
+
+augroup visual_bell_sucks
+  au!
+  au GUIEnter * set t_vb=
+augroup END

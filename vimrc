@@ -63,9 +63,6 @@ let mapleader = ","
 " Bells == annoying
 set vb
 set t_vb=
-if has("autocmd") && has("gui")
-  au GUIEnter * set t_vb=
-endif
 
 " For some reason I accidentally hit this shortcut all the time...let's disable it. (I usually don't look at
 " man pages from within vim anyway.)
@@ -109,9 +106,10 @@ set sessionoptions-=buffers
 set viminfo='1000,f1,<500,:100,/100,h
 
 " Restore position when reopening a file.
-if has("autocmd")
+augroup restore_position
+  au!
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-endif
+augroup END
 
 " }}}
 " ----------------------------- Colorscheme Settings ---------------------------------------------------- {{{
@@ -122,10 +120,13 @@ colorscheme cespare
 hi ExtraWhitespace guibg=#CCCCCC
 hi ExtraWhitespace ctermbg=7
 match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
+augroup highlight_whitespace
+  au!
+  au BufWinEnter * match ExtraWhitespace /\s\+$/
+  au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+  au InsertLeave * match ExtraWhitespace /\s\+$/
+  au BufWinLeave * call clearmatches()
+augroup END
 
 " }}}
 " -------------------------------------- Plugin-specific Settings --------------------------------------- {{{
@@ -281,9 +282,12 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Go (vim-go) shortcuts and settings
-au FileType go nmap <leader>gi <Plug>(go-info)
-au FileType go nmap <leader>gd <Plug>(go-doc)
-au FileType go nmap <leader>gr <Plug>(go-rename)
+augroup go_shortcuts
+  au!
+  au FileType go nmap <leader>gi <Plug>(go-info)
+  au FileType go nmap <leader>gd <Plug>(go-doc)
+  au FileType go nmap <leader>gr <Plug>(go-rename)
+augroup END
 let g:go_fmt_command = "goimports"
 let g:go_highlight_format_strings = 0
 " I'm using a more general mechanism for this
@@ -304,7 +308,7 @@ nnoremap <leader>a :Ag
 let ruby_space_settings = 1
 
 " Go specific settings
-augroup golang
+augroup go_linelength
   au!
   au FileType go,asm setlocal textwidth=80
   au FileType go,asm setlocal wrapmargin=80
