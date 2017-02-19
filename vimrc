@@ -286,6 +286,7 @@ augroup go_shortcuts
   au FileType go nmap <leader>gr <Plug>(go-rename)
 augroup END
 let g:go_fmt_command = "goimports"
+let g:go_fmt_options = "-local liftoff/"
 let g:go_highlight_format_strings = 0
 " I'm using a more general mechanism for this
 let g:go_highlight_trailing_whitespace_error = 0
