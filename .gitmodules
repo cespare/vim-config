@@ -19,9 +19,6 @@
 [submodule "bundle/bclose"]
 	path = bundle/bclose
 	url = git@github.com:cespare/vim-bclose.git
-[submodule "bundle/zenburn-theme"]
-	path = bundle/zenburn-theme
-	url = git://github.com/cespare/zenburn.git
 [submodule "bundle/indent-object"]
 	path = bundle/indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object.git
