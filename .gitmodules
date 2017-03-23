@@ -85,9 +85,6 @@
 [submodule "bundle/html5"]
 	path = bundle/html5
 	url = https://github.com/othree/html5.vim
-[submodule "bundle/stylus"]
-	path = bundle/stylus
-	url = git@github.com:cespare/vim-stylus.git
 [submodule "bundle/handlebars"]
 	path = bundle/handlebars
 	url = git://github.com/nono/vim-handlebars.git
