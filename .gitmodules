@@ -64,9 +64,6 @@
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
-[submodule "bundle/scala"]
-	path = bundle/scala
-	url = git@github.com:cespare/scala-vim-support.git
 [submodule "bundle/sbd"]
 	path = bundle/sbd
 	url = git@github.com:cespare/vim-sbd.git
