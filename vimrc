@@ -290,6 +290,7 @@ let g:go_fmt_options = "-local liftoff/"
 let g:go_highlight_format_strings = 0
 " I'm using a more general mechanism for this
 let g:go_highlight_trailing_whitespace_error = 0
+let g:go_template_autocreate = 0
 
 " I usually want to evaluate the outermost s-expr in Clojure. This is often more handy than cpp (evaluate
 " current expr).
