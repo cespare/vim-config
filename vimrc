@@ -12,7 +12,7 @@ syntax on
 filetype plugin indent on
 
 " Text-wrapping stuff. (Also check out my cursorcolumn setting in .gvimrc.)
-set textwidth=110 " 80-width lines is for 1995
+set textwidth=80
 let &wrapmargin= &textwidth
 set formatoptions=croql " Now it shouldn't hard-wrap long lines as you're typing (annoying), but you can gq
                         " as expected.
@@ -218,7 +218,7 @@ function! ToggleColorColumn()
 endfunction
 command! ToggleColorColumn call ToggleColorColumn()
 
-" Set width to 80
+" Toggle width between 80 and 110.
 function! ToggleWidth()
   if &textwidth == 80
     set textwidth=110
@@ -306,8 +306,8 @@ nnoremap <leader>a :Ag
 " Nice ruby settings
 let ruby_space_settings = 1
 
-" Go specific settings
-augroup go_linelength
+" Go-specific settings
+augroup go
   au!
   au FileType go,asm setlocal textwidth=80
   au FileType go,asm setlocal wrapmargin=80
@@ -338,6 +338,12 @@ augroup END
 vnoremap <leader>co :CoffeeCompile<cr>
 
 " Clojure settings
+augroup clojure
+  au!
+  au FileType clojure setlocal textwidth=110
+  au FileType clojure setlocal wrapmargin=110
+  au FileType clojure setlocal colorcolumn=110
+augroup END
 let g:clojure_align_multiline_strings = 0
 let g:clojure_fuzzy_indent = 1
 let g:clojure_fuzzy_indent_patterns = "with.*,def.*,let.*,send.*"
