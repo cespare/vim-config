@@ -18,13 +18,14 @@ set formatoptions=croql " Now it shouldn't hard-wrap long lines as you're typing
                         " as expected.
 
 set hidden "This allows vim to put buffers in the bg without saving, and then allows undoes when you fg them.
-set history=1000 "Longer history
+set history=1000 " Longer history
 set number
 set hlsearch
 set autoindent
 set wildmenu
 set wildmode=list:longest
-set scrolloff=3 " This keeps three lines of context when scrolling
+set scrolloff=3 " This keeps three lines of context when scrolling.
+set autoread    " Reload changed files when focus returns.
 set expandtab
 set smarttab
 set ts=2
