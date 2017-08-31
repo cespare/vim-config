@@ -78,17 +78,16 @@ endif
 " Ensure the temp dirs exist
 if !isdirectory($HOME . "/.vim/tmp")
   call system("mkdir -p ~/.vim/tmp/swap")
-  call system("mkdir -p ~/.vim/tmp/backup")
   call system("mkdir -p ~/.vim/tmp/undo")
 endif
 
-" Change where we store swap/undo files
+" Change where we store swap/undo files.
 set dir=~/.vim/tmp/swap//
-set backupdir=~/.vim/tmp/backup//
 set undodir=~/.vim/tmp/undo/
 
-" Don't back up temp files
-set backupskip=/tmp/*,/private/tmp/*
+" Don't save backup files. That's what git is for.
+set nobackup
+set nowritebackup
 
 " Don't save other tabs in sessions (as I don't use tabs)
 set sessionoptions-=tabpages
