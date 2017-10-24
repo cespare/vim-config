@@ -253,11 +253,15 @@ noremap <expr> <C-l> (&scroll+2).'j'
 "nmap <leader>q <Plug>Kwbd
 nnoremap <silent> <leader>q :Sbd<cr>
 
-" Close the quickfix window
-nnoremap <leader>x :cclose<cr>
-
 " No colon in command mode to enter an ex command; just use space
 nnoremap <Space> :
+
+" Shortcuts for using the quickfix window (partly copied from unimpaired):
+nnoremap ]q :cnext<cr>
+nnoremap [q :cprevious<cr>
+nnoremap [Q :cfirst<cr>
+nnoremap ]Q :clast<cr>
+nnoremap <leader>x :cclose<cr>
 
 " Shortcuts for custom commands:
 "noremap <leader>m :MarkdownDoctor<cr><cr>
@@ -284,10 +288,15 @@ augroup go_shortcuts
   au FileType go nmap <leader>gi <Plug>(go-info)
   au FileType go nmap <leader>gd <Plug>(go-doc)
   au FileType go nmap <leader>gr <Plug>(go-rename)
+  au FileType go nmap <leader>gb <Plug>(go-build)
+  au FileType go nmap <leader>gt <Plug>(go-test)
+  au FileType go nmap <leader>gf <Plug>(go-test-func)
+  au FileType go nmap <leader>gc <Plug>(go-coverage-toggle)
 augroup END
 let g:go_fmt_command = "goimports"
 let g:go_fmt_options = "-local liftoff/"
 let g:go_highlight_format_strings = 0
+let g:go_list_type="quickfix"
 " I'm using a more general mechanism for this
 let g:go_highlight_trailing_whitespace_error = 0
 let g:go_template_autocreate = 0
