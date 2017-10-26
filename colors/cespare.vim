@@ -34,12 +34,8 @@ let s:underline_items = [
             \ "Underlined", "VisualNOS"
             \ ]
 
-let s:undercurl_items = [
-            \ "SpellBad", "SpellCap", "SpellLocal", "SpellRare"
-            \ ]
-
 " Clear default settings
-for s:item in s:normal_items + s:bold_items + s:underline_items + s:undercurl_items
+for s:item in s:normal_items + s:bold_items + s:underline_items
     exec "hi " . s:item . " guifg=NONE guibg=NONE gui=none"
                 \ . " ctermfg=NONE ctermbg=NONE cterm=none term=none"
 endfor
@@ -58,6 +54,7 @@ hi Constant     ctermfg=150                 guifg=#afd787
 hi VertSplit    ctermfg=236   ctermbg=244   guifg=#303030 guibg=#808080
 hi CursorLine   ctermfg=NONE  ctermbg=238   guifg=NONE    guibg=#444444
 hi Visual       ctermfg=NONE  ctermbg=24    guifg=NONE    guibg=#005f87
+hi Title        ctermfg=74    ctermbg=NONE guifg=#5fafd7 guibg=NONE
 hi Todo         ctermfg=185   ctermbg=NONE  guifg=#d7d75f guibg=NONE
 hi Pmenu        ctermfg=NONE  ctermbg=249   guifg=bg      guibg=#b2b2b2
 hi PmenuSel     ctermfg=NONE  ctermbg=24    guifg=fg      guibg=#005f87

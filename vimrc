@@ -38,6 +38,7 @@ set undofile
 set backspace=indent,eol,start
 set incsearch
 set nojoinspaces
+set nospell " turn this on as required
 if exists("&ballooneval")
   set noballooneval " annoying
 endif
@@ -231,6 +232,14 @@ function! ToggleWidth()
   endif
 endfunction
 command! ToggleWidth call ToggleWidth()
+
+" Show the current highlight group underneath the cursor:
+function! SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
 
 " }}}
 " ------------------------------------------ My Mappings ------------------------------------------------ {{{
