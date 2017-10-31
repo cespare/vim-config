@@ -38,6 +38,7 @@ set undofile
 set backspace=indent,eol,start
 set incsearch
 set nojoinspaces
+set splitright
 set nospell " turn this on as required
 if exists("&ballooneval")
   set noballooneval " annoying
