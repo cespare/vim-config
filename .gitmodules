@@ -67,9 +67,6 @@
 [submodule "bundle/nginx"]
 	path = bundle/nginx
 	url = https://github.com/vim-scripts/nginx.vim.git
-[submodule "bundle/ctrlp"]
-	path = bundle/ctrlp
-	url = https://github.com/kien/ctrlp.vim.git
 [submodule "bundle/indent-guides"]
 	path = bundle/indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
@@ -103,9 +100,6 @@
 [submodule "bundle/clojure-static"]
 	path = bundle/clojure-static
 	url = https://github.com/guns/vim-clojure-static.git
-[submodule "bundle/ag"]
-	path = bundle/ag
-	url = https://github.com/rking/ag.vim.git
 [submodule "bundle/nimrod"]
 	path = bundle/nimrod
 	url = git://github.com/zah/nimrod.vim.git
@@ -163,3 +157,12 @@
 [submodule "bundle/cljfmt"]
 	path = bundle/cljfmt
 	url = git@github.com:dmac/vim-cljfmt
+[submodule "bundle/fzf"]
+	path = bundle/fzf
+	url = https://github.com/junegunn/fzf
+[submodule "bundle/fzf.vim"]
+	path = bundle/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim

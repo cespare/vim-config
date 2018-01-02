@@ -154,22 +154,13 @@ let g:NERDCustomDelimiters = {
 " rather than the start of text.
 let g:NERDDefaultAlign = 'left'
 
-" CtrlP Settings
-" Disable default mapping
-let g:ctrlp_map = ''
-" Going to use <leader>d* commands to launch ctrlp.
-" No good mnemonic, but it's very quick to type and unused.
-nnoremap <leader>dp :CtrlP<cr>
-nnoremap <leader>db :CtrlPBuffer<cr>
-nnoremap <leader>dm :CtrlPMRU<cr>
-" Consider a Gemfile in addition to the other project root indicators
-let g:ctrlp_root_markers = ['Gemfile']
-" Start CtrlP in the project root (containing .git, etc)
-let g:ctrlp_working_path_mode = 'r'
-let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/]\.(git|hg)$',
-  \ 'file': '\.log$',
-  \ }
+" fzf
+nnoremap ; :Buffers<CR>
+nnoremap <leader>d :Files<CR>
+
+" ag (via ack.vim):
+let g:ackprg = 'ag --vimgrep'
+nnoremap <leader>a :Ack! 
 
 " Insertlessly settings
 " I nmap space to :
@@ -316,9 +307,6 @@ let g:go_template_autocreate = 0
 nnoremap cpo :Eval<cr>
 
 nnoremap <leader>sc :Scratch<cr>
-
-" Ag
-nnoremap <leader>a :Ag 
 
 " }}}
 " ------------------------------------ Language-specific Settings --------------------------------------- {{{
