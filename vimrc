@@ -43,6 +43,7 @@ set nospell " turn this on as required
 if exists("&ballooneval")
   set noballooneval " annoying
 endif
+set noshowcmd
 
 " When completing, don't automatically select the first choice, but instead just insert the longest common
 " text.
