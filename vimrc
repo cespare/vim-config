@@ -132,8 +132,6 @@ augroup END
 
 " }}}
 " -------------------------------------- Plugin-specific Settings --------------------------------------- {{{
-"  Powerline is installed as a top-level repo (submodule of dotfiles).
-set rtp+=$HOME/scripts/powerline/powerline/bindings/vim
 
 " Gundo settings
 nnoremap <leader>gu :GundoToggle<cr>
@@ -170,15 +168,19 @@ let g:insertlessly_insert_spaces = 0
 let g:insertlessly_cleanup_trailing_ws = 0
 let g:insertlessly_cleanup_all_ws = 0
 
-" Powerline settings
-let g:Powerline_symbols = 'fancy'
-
 " easy-align settings
 vnoremap <leader>a :EasyAlign<Enter>
 
 " Scratch (github.com/matth/scratch.vim)
 let g:scratch_top = 0
 let g:scratch_height = 25
+
+" Airline
+let g:airline_theme = 'minimalist'
+let g:airline_section_z='%3p%% • %l/%L • %v'
+let g:airline_section_error = ''
+let g:airline_section_warning = ''
+let g:airline#extensions#wordcount#enabled = 0
 
 " }}}
 " ---------------------------------- Custom Commands and Functions -------------------------------------- {{{

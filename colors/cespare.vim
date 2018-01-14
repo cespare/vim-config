@@ -20,13 +20,13 @@ let s:normal_items = [
             \ "IncSearch", "LineNr", "MatchParen", "ModeMsg", "MoreMsg",
             \ "NonText", "Pmenu", "PmenuSbar", "PmenuSel",
             \ "PmenuThumb", "PreProc", "Question", "Search", "SignColumn",
-            \ "Special", "SpecialKey", "Statement", "StatusLineNC", "TabLine",
+            \ "Special", "SpecialKey", "Statement", "TabLine",
             \ "TabLineFill", "Todo", "Type", "VertSplit", "Visual",
             \ "WarningMsg", "WildMenu",
             \ ]
 
 let s:bold_items = [
-            \ "DiffText", "FoldColumn", "Folded", "StatusLine", "TabLineSel",
+            \ "DiffText", "FoldColumn", "Folded", "TabLineSel",
             \ "Title",
             \ ]
 
@@ -61,6 +61,9 @@ hi PmenuSel     ctermfg=NONE  ctermbg=24    guifg=fg      guibg=#005f87
 hi PmenuSbar    ctermfg=249   ctermbg=252   guifg=#b2b2b2 guibg=#d0d0d0
 hi PmenuThumb   ctermfg=NONE  ctermbg=244   guifg=fg      guibg=#808080
 
+"hi StatusLine   ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE
+"hi StatusLineNC ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE
+
 "hi Special      ctermfg=228                 guifg=#ffff87
 
 "hi ModeMsg      guifg=fg
@@ -83,7 +86,6 @@ hi PmenuThumb   ctermfg=NONE  ctermbg=244   guifg=fg      guibg=#808080
 "hi ErrorMsg     guifg=#ff5f5f
 "hi MoreMsg      guifg=#5fd7d7
 "hi WarningMsg   guifg=#d7875f
-"hi StatusLine   guifg=bg
 "hi TabLine      guifg=bg
 "hi TabLineSel   guifg=fg
 "hi WildMenu     guifg=fg
@@ -91,14 +93,11 @@ hi PmenuThumb   ctermfg=NONE  ctermbg=244   guifg=fg      guibg=#808080
 "hi FoldColumn                   guibg=#4e4e4e
 "hi Folded                       guibg=#4e4e4e
 "hi SignColumn                   guibg=#4e4e4e
-"hi StatusLineNC guifg=#444444
 "hi TabLineFill  guifg=#444444
 "hi WildMenu                     guibg=#005f87
 "hi FoldColumn   guifg=#bcbcbc
 "hi Folded       guifg=#bcbcbc
 "hi SignColumn   guifg=#b2b2b2
-"hi StatusLine                   guibg=#b2b2b2
-"hi StatusLineNC                 guibg=#b2b2b2
 "hi TabLine                      guibg=#b2b2b2
 "hi TabLineFill                  guibg=#b2b2b2
 "hi TabLineSel                   guibg=#005f87
