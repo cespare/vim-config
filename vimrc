@@ -72,6 +72,9 @@ set t_vb=
 " man pages from within vim anyway.)
 noremap K <Nop>
 
+" Disable ctrl-a; I press this accidentally because of tmux all the time.
+noremap <C-a> <Nop>
+
 " Unify vim's default register and the system clipboard
 set clipboard=unnamed
 if s:uname == "Linux"
