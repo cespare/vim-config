@@ -26,6 +26,7 @@ set wildmenu
 set wildmode=list:longest
 set scrolloff=3 " This keeps three lines of context when scrolling.
 set autoread    " Reload changed files when focus returns.
+au FocusGained * :checktime " Make autoread work with neovim/vimr
 set expandtab
 set smarttab
 set ts=2
