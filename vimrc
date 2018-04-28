@@ -3,9 +3,6 @@
 " Some settings are OS-dependent
 let s:uname = system("echo -n \"$(uname)\"")
 
-" ----------------------------------------- Configure Pathogen ------------------------------------------ {{{
-execute pathogen#infect()
-
 " }}}
 " ----------------------------------------- Basic Settings ---------------------------------------------- {{{
 syntax on

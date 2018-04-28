@@ -1,174 +1,171 @@
 [submodule "bundle/surround"]
-	path = bundle/surround
+	path = pack/plugins/start/surround
 	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+	path = pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/gundo"]
-	path = bundle/gundo
+	path = pack/plugins/start/gundo
 	url = https://github.com/sjl/gundo.vim.git
 [submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
+	path = pack/plugins/start/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = https://github.com/vim-scripts/ack.vim.git
 [submodule "bundle/fugitive"]
-	path = bundle/fugitive
+	path = pack/plugins/start/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/bclose"]
-	path = bundle/bclose
+	path = pack/plugins/start/bclose
 	url = git@github.com:cespare/vim-bclose.git
 [submodule "bundle/indent-object"]
-	path = bundle/indent-object
+	path = pack/plugins/start/indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object.git
 [submodule "bundle/repeat"]
-	path = bundle/repeat
+	path = pack/plugins/start/repeat
 	url = https://github.com/tpope/vim-repeat
 [submodule "bundle/javaimp"]
-	path = bundle/javaimp
+	path = pack/plugins/start/javaimp
 	url = https://github.com/vim-scripts/javaimp.vim.git
 [submodule "bundle/lucius-theme"]
-	path = bundle/lucius-theme
+	path = pack/plugins/start/lucius-theme
 	url = https://github.com/vim-scripts/Lucius.git
 [submodule "bundle/coffeescript"]
-	path = bundle/coffeescript
+	path = pack/plugins/start/coffeescript
 	url = https://github.com/kchmck/vim-coffee-script.git
 [submodule "bundle/dtd-syntax"]
-	path = bundle/dtd-syntax
+	path = pack/plugins/start/dtd-syntax
 	url = git@github.com:cespare/dtd.vim.git
 [submodule "bundle/xterm-color-table"]
-	path = bundle/xterm-color-table
+	path = pack/plugins/start/xterm-color-table
 	url = https://github.com/vim-scripts/xterm-color-table.vim.git
 [submodule "bundle/autotag"]
-	path = bundle/autotag
+	path = pack/plugins/start/autotag
 	url = https://github.com/vim-scripts/AutoTag.git
 [submodule "bundle/cespare-snippets"]
-	path = bundle/cespare-snippets
+	path = pack/plugins/start/cespare-snippets
 	url = git@github.com:cespare/cespare-snippets.git
-[submodule "pathogen"]
-	path = pathogen
-	url = https://github.com/tpope/vim-pathogen.git
 [submodule "bundle/vidir-ls"]
-	path = bundle/vidir-ls
+	path = pack/plugins/start/vidir-ls
 	url = https://github.com/trapd00r/vim-syntax-vidir-ls.git
 [submodule "bundle/less"]
-	path = bundle/less
+	path = pack/plugins/start/less
 	url = https://github.com/groenewege/vim-less.git
 [submodule "bundle/puppet"]
-	path = bundle/puppet
+	path = pack/plugins/start/puppet
 	url = https://github.com/puppetlabs/puppet-syntax-vim.git
 [submodule "bundle/vim-ruby"]
-	path = bundle/vim-ruby
+	path = pack/plugins/start/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "bundle/sbd"]
-	path = bundle/sbd
+	path = pack/plugins/start/sbd
 	url = git@github.com:cespare/vim-sbd.git
 [submodule "bundle/nginx"]
-	path = bundle/nginx
+	path = pack/plugins/start/nginx
 	url = https://github.com/vim-scripts/nginx.vim.git
 [submodule "bundle/indent-guides"]
-	path = bundle/indent-guides
+	path = pack/plugins/start/indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
 [submodule "bundle/endwise"]
-	path = bundle/endwise
+	path = pack/plugins/start/endwise
 	url = git@github.com:cespare/vim-endwise.git
 [submodule "bundle/insertlessly"]
-	path = bundle/insertlessly
+	path = pack/plugins/start/insertlessly
 	url = git://github.com/dahu/Insertlessly.git
 [submodule "bundle/html5"]
-	path = bundle/html5
+	path = pack/plugins/start/html5
 	url = https://github.com/othree/html5.vim
 [submodule "bundle/handlebars"]
-	path = bundle/handlebars
+	path = pack/plugins/start/handlebars
 	url = git://github.com/nono/vim-handlebars.git
 [submodule "bundle/toml"]
-	path = bundle/toml
+	path = pack/plugins/start/toml
 	url = git@github.com:cespare/vim-toml.git
 [submodule "bundle/ragel"]
-	path = bundle/ragel
+	path = pack/plugins/start/ragel
 	url = git@github.com:jayferd/ragel.vim.git
 [submodule "bundle/octave"]
-	path = bundle/octave
+	path = pack/plugins/start/octave
 	url = git@github.com:vim-scripts/octave.vim--.git
 [submodule "bundle/liquid"]
-	path = bundle/liquid
+	path = pack/plugins/start/liquid
 	url = https://github.com/tpope/vim-liquid
 [submodule "bundle/fireplace"]
-	path = bundle/fireplace
+	path = pack/plugins/start/fireplace
 	url = https://github.com/tpope/vim-fireplace.git
 [submodule "bundle/clojure-static"]
-	path = bundle/clojure-static
+	path = pack/plugins/start/clojure-static
 	url = https://github.com/guns/vim-clojure-static.git
 [submodule "bundle/nimrod"]
-	path = bundle/nimrod
+	path = pack/plugins/start/nimrod
 	url = git://github.com/zah/nimrod.vim.git
 [submodule "bundle/sneak"]
-	path = bundle/sneak
+	path = pack/plugins/start/sneak
 	url = git://github.com/justinmk/vim-sneak.git
 [submodule "bundle/easy-align"]
-	path = bundle/easy-align
+	path = pack/plugins/start/easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
 [submodule "bundle/scratch"]
-	path = bundle/scratch
+	path = pack/plugins/start/scratch
 	url = https://github.com/mtth/scratch.vim.git
 [submodule "bundle/keepcase"]
-	path = bundle/keepcase
+	path = pack/plugins/start/keepcase
 	url = https://github.com/vim-scripts/keepcase.vim.git
 [submodule "bundle/rust"]
-	path = bundle/rust
+	path = pack/plugins/start/rust
 	url = https://github.com/wting/rust.vim.git
 [submodule "bundle/yaml"]
-	path = bundle/yaml
+	path = pack/plugins/start/yaml
 	url = git@github.com:ingydotnet/yaml-vim.git
 [submodule "bundle/ansible-yaml"]
-	path = bundle/ansible-yaml
+	path = pack/plugins/start/ansible-yaml
 	url = git@github.com:chase/vim-ansible-yaml
 [submodule "bundle/glsl"]
-	path = bundle/glsl
+	path = pack/plugins/start/glsl
 	url = https://github.com/tikhomirov/vim-glsl.git
 [submodule "bundle/snipmate"]
-	path = bundle/snipmate
+	path = pack/plugins/start/snipmate
 	url = https://github.com/garbas/vim-snipmate.git
 [submodule "bundle/tlib"]
-	path = bundle/tlib
+	path = pack/plugins/start/tlib
 	url = https://github.com/tomtom/tlib_vim.git
 [submodule "bundle/addon-mw-utils"]
-	path = bundle/addon-mw-utils
+	path = pack/plugins/start/addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
 [submodule "bundle/python-syntax"]
-	path = bundle/python-syntax
+	path = pack/plugins/start/python-syntax
 	url = https://github.com/hdima/python-syntax.git
 [submodule "bundle/hexmode"]
-	path = bundle/hexmode
+	path = pack/plugins/start/hexmode
 	url = https://github.com/fidian/hexmode
 [submodule "bundle/markdown"]
-	path = bundle/markdown
+	path = pack/plugins/start/markdown
 	url = https://github.com/tpope/vim-markdown
 [submodule "bundle/bufexplorer"]
-	path = bundle/bufexplorer
+	path = pack/plugins/start/bufexplorer
 	url = https://github.com/jlanzarotta/bufexplorer
 [submodule "bundle/protobuf"]
-	path = bundle/protobuf
+	path = pack/plugins/start/protobuf
 	url = https://github.com/uarun/vim-protobuf
 [submodule "bundle/vim-go"]
-	path = bundle/vim-go
+	path = pack/plugins/start/vim-go
 	url = https://github.com/fatih/vim-go
 [submodule "bundle/cljfmt"]
-	path = bundle/cljfmt
+	path = pack/plugins/start/cljfmt
 	url = git@github.com:dmac/vim-cljfmt
 [submodule "bundle/fzf"]
-	path = bundle/fzf
+	path = pack/plugins/start/fzf
 	url = https://github.com/junegunn/fzf
 [submodule "bundle/fzf.vim"]
-	path = bundle/fzf.vim
+	path = pack/plugins/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
 [submodule "bundle/ack.vim"]
-	path = bundle/ack.vim
+	path = pack/plugins/start/ack.vim
 	url = https://github.com/mileszs/ack.vim
 [submodule "bundle/airline"]
-	path = bundle/airline
+	path = pack/plugins/start/airline
 	url = https://github.com/vim-airline/vim-airline
 [submodule "bundle/airline-themes"]
-	path = bundle/airline-themes
+	path = pack/plugins/start/airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
