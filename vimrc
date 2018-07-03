@@ -136,6 +136,7 @@ augroup END
 " -------------------------------------- Plugin-specific Settings --------------------------------------- {{{
 
 " Gundo settings
+let g:gundo_prefer_python3 = 1
 nnoremap <leader>gu :GundoToggle<cr>
 
 " NERDTree settings
