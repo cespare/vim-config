@@ -112,7 +112,7 @@ set viminfo='1000,f1,<500,:100,/100,h
 " Restore position when reopening a file.
 augroup restore_position
   au!
-  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 augroup END
 
 " }}}
