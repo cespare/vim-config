@@ -148,9 +148,6 @@
 [submodule "bundle/protobuf"]
 	path = pack/plugins/start/protobuf
 	url = https://github.com/uarun/vim-protobuf
-[submodule "bundle/vim-go"]
-	path = pack/plugins/start/vim-go
-	url = https://github.com/fatih/vim-go
 [submodule "bundle/cljfmt"]
 	path = pack/plugins/start/cljfmt
 	url = git@github.com:dmac/vim-cljfmt
@@ -169,3 +166,6 @@
 [submodule "bundle/airline-themes"]
 	path = pack/plugins/start/airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "pack/plugins/start/vim-go"]
+	path = pack/plugins/start/vim-go
+	url = git@github.com:cespare/vim-go
