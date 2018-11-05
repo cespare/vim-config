@@ -299,8 +299,7 @@ augroup go_shortcuts
   au FileType go nmap <leader>gf <Plug>(go-test-func)
   au FileType go nmap <leader>gc <Plug>(go-coverage-toggle)
 augroup END
-" See https://github.com/fatih/vim-go/pull/2034#issuecomment-434175809.
-let g:go_bin_path = "/dont/look/here/vim-go"
+let g:go_search_bin_path_first = 0
 let g:go_fmt_command = "goimports"
 let g:go_fmt_options = "-local liftoff/"
 let g:go_highlight_format_strings = 0

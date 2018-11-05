@@ -168,4 +168,4 @@
 	url = https://github.com/vim-airline/vim-airline-themes
 [submodule "pack/plugins/start/vim-go"]
 	path = pack/plugins/start/vim-go
-	url = git@github.com:cespare/vim-go
+	url = https://github.com/fatih/vim-go
