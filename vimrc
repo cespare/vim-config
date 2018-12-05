@@ -277,6 +277,8 @@ noremap <leader>8 :ToggleWidth<cr>
 
 " Git blame shortcut (fugitive)
 noremap <leader>bl :Gblame<cr>
+" Open GitHub page in browser (fugitive/rhubarb)
+noremap <leader>bb :Gbrowse<cr>
 
 " Quick fold toggling
 noremap <leader>f za

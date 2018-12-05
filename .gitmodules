@@ -169,3 +169,6 @@
 [submodule "pack/plugins/start/vim-go"]
 	path = pack/plugins/start/vim-go
 	url = https://github.com/fatih/vim-go
+[submodule "pack/plugins/start/rhubarb"]
+	path = pack/plugins/start/rhubarb
+	url = https://github.com/tpope/vim-rhubarb
