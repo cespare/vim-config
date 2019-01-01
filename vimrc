@@ -249,6 +249,10 @@ nnoremap <leader>$ :call <SID>DeleteTrailingWhitespace()<cr>
 " Make Y be like C and D (yank to end of line), a mapping so obvious it's recommended by :help Y
 nnoremap Y y$
 
+" Shortcuts for creating splits
+nnoremap <leader>h :split<cr>
+nnoremap <leader>v :vsplit<cr>
+
 " Make it easier to move around through blocks of text:
 noremap <C-j> gj
 noremap <C-k> gk
