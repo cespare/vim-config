@@ -1,5 +1,3 @@
-" This is my .vimrc...I use gvim on linux, macvim on Mac OS. 7.3 required.
-
 " Some settings are OS-dependent
 let s:uname = system("echo -n \"$(uname)\"")
 
