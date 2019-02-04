@@ -50,7 +50,7 @@ hi Error        ctermfg=NONE  ctermbg=239   guifg=NONE    guibg=#4e4e4e
 hi LineNr       ctermfg=245   ctermbg=235   guifg=#8a8a8a guibg=#404040
 hi Cursor                                   guifg=bg      guibg=#87afd7
 hi ColorColumn  ctermfg=NONE  ctermbg=237   guifg=NONE    guibg=#3a3a3a
-hi Constant     ctermfg=150                 guifg=#afd787
+hi String       ctermfg=150                 guifg=#afd787
 hi VertSplit    ctermfg=236   ctermbg=244   guifg=#303030 guibg=#808080
 hi CursorLine   ctermfg=NONE  ctermbg=238   guifg=NONE    guibg=#444444
 hi Visual       ctermfg=NONE  ctermbg=24    guifg=NONE    guibg=#005f87
