@@ -137,13 +137,6 @@ augroup END
 let g:gundo_prefer_python3 = 1
 nnoremap <leader>gu :GundoToggle<cr>
 
-" NERDTree settings
-let g:NERDTreeChDirMode=2
-let g:NERDChristmasTree=1
-nnoremap <leader>t :NERDTreeToggle<cr><C-w>=
-nnoremap <leader>nf :NERDTreeFind<cr>
-nnoremap <leader>nw :NERDTreeFocus<cr>
-
 " fzf
 nnoremap ; :Buffers<CR>
 nnoremap <leader>d :Files<CR>

@@ -1,9 +1,6 @@
 [submodule "bundle/surround"]
 	path = pack/plugins/start/surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "bundle/nerdtree"]
-	path = pack/plugins/start/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/gundo"]
 	path = pack/plugins/start/gundo
 	url = https://github.com/sjl/gundo.vim.git
@@ -166,3 +163,6 @@
 [submodule "pack/plugins/start/commentary"]
 	path = pack/plugins/start/commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "pack/plugins/start/dirvish"]
+	path = pack/plugins/start/dirvish
+	url = https://github.com/justinmk/vim-dirvish
