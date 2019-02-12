@@ -9,11 +9,11 @@ filetype plugin indent on
 " Text-wrapping stuff. (Also check out my cursorcolumn setting in .gvimrc.)
 set textwidth=80
 let &wrapmargin= &textwidth
-set formatoptions=croql " Now it shouldn't hard-wrap long lines as you're typing (annoying), but you can gq
-                        " as expected.
+" Don't hard-wrap long lines as you're typing (annoying), but allow gq to work.
+set formatoptions=croql
 
-set hidden "This allows vim to put buffers in the bg without saving, and then allows undoes when you fg them.
-set history=1000 " Longer history
+set hidden
+set history=1000
 set number
 set hlsearch
 set autoindent
@@ -191,7 +191,6 @@ function! <SID>DeleteTrailingWhitespace()
 endfunction
 
 " Preview the current markdown file:
-command! MarkdownDoctor !markdown_doctor % | bcat
 command! Markdownd !markdownd -w % >/dev/null &
 
 " Toggle colorcolumn
@@ -263,7 +262,6 @@ nnoremap ]Q :clast<cr>
 nnoremap <leader>x :cclose<cr>
 
 " Shortcuts for custom commands:
-"noremap <leader>m :MarkdownDoctor<cr><cr>
 noremap <leader>m :Markdownd<cr><cr>
 noremap <leader>l :ToggleColorColumn<cr>
 noremap <leader>8 :ToggleWidth<cr>
