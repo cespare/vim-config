@@ -247,9 +247,8 @@ noremap <C-k> gk
 noremap <expr> <C-h> (&scroll-2).'k'
 noremap <expr> <C-l> (&scroll+2).'j'
 
-" Close a buffer without messing with the windows (vim-bclose)
-"nmap <leader>q <Plug>Kwbd
-nnoremap <silent> <leader>q :Sbd<cr>
+" Close a buffer without messing with the windows.
+nnoremap <silent> <leader>q :bp\|bd #<CR>
 
 " No colon in command mode to enter an ex command; just use space
 nnoremap <Space> :

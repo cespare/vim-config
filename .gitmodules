@@ -13,9 +13,6 @@
 [submodule "bundle/fugitive"]
 	path = pack/plugins/start/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundle/bclose"]
-	path = pack/plugins/start/bclose
-	url = git@github.com:cespare/vim-bclose.git
 [submodule "bundle/indent-object"]
 	path = pack/plugins/start/indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object.git
@@ -55,9 +52,6 @@
 [submodule "bundle/vim-ruby"]
 	path = pack/plugins/start/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
-[submodule "bundle/sbd"]
-	path = pack/plugins/start/sbd
-	url = git@github.com:cespare/vim-sbd.git
 [submodule "bundle/nginx"]
 	path = pack/plugins/start/nginx
 	url = https://github.com/vim-scripts/nginx.vim.git
