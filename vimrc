@@ -144,15 +144,6 @@ nnoremap <leader>t :NERDTreeToggle<cr><C-w>=
 nnoremap <leader>nf :NERDTreeFind<cr>
 nnoremap <leader>nw :NERDTreeFocus<cr>
 
-" Override bad NERDCommenter defaults.
-let g:NERDCustomDelimiters = {
-      \ 'asm': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
-      \ }
-
-" Make NERDCommenter comment out from the start of the line,
-" rather than the start of text.
-let g:NERDDefaultAlign = 'left'
-
 " fzf
 nnoremap ; :Buffers<CR>
 nnoremap <leader>d :Files<CR>

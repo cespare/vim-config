@@ -7,9 +7,6 @@
 [submodule "bundle/gundo"]
 	path = pack/plugins/start/gundo
 	url = https://github.com/sjl/gundo.vim.git
-[submodule "bundle/nerdcommenter"]
-	path = pack/plugins/start/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = https://github.com/vim-scripts/ack.vim.git
@@ -172,3 +169,6 @@
 [submodule "pack/plugins/start/rhubarb"]
 	path = pack/plugins/start/rhubarb
 	url = https://github.com/tpope/vim-rhubarb
+[submodule "pack/plugins/start/commentary"]
+	path = pack/plugins/start/commentary
+	url = https://github.com/tpope/vim-commentary
