@@ -94,9 +94,6 @@
 [submodule "bundle/easy-align"]
 	path = pack/plugins/start/easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
-[submodule "bundle/scratch"]
-	path = pack/plugins/start/scratch
-	url = https://github.com/mtth/scratch.vim.git
 [submodule "bundle/keepcase"]
 	path = pack/plugins/start/keepcase
 	url = https://github.com/vim-scripts/keepcase.vim.git
