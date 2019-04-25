@@ -284,6 +284,8 @@ augroup go_shortcuts
   au FileType go nmap <leader>gf <Plug>(go-test-func)
   au FileType go nmap <leader>gc <Plug>(go-coverage-toggle)
 augroup END
+let g:go_def_mode = "gopls"
+let g:go_info_mode = "gopls"
 let g:go_search_bin_path_first = 0
 let g:go_fmt_command = "goimports"
 let g:go_fmt_options = "-local liftoff/"
