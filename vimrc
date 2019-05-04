@@ -299,7 +299,8 @@ let g:go_template_autocreate = 0
 " current expr).
 nnoremap cpo :Eval<cr>
 
-nnoremap <leader>sc :Scratch<cr>
+" Quickly 'go run' the current file. Good for little scratch programs.
+nnoremap <leader>gg :!go run %<cr>
 
 " }}}
 " ------------------------------------ Language-specific Settings --------------------------------------- {{{
