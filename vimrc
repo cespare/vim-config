@@ -317,6 +317,9 @@ augroup go
   au FileType go,asm setlocal sw=8
 augroup END
 
+" Rust settings
+let g:rustfmt_autosave = 1
+
 " Markdown settings
 augroup markdown
   au!

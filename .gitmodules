@@ -163,3 +163,6 @@
 [submodule "pack/plugins/start/dirvish"]
 	path = pack/plugins/start/dirvish
 	url = https://github.com/justinmk/vim-dirvish
+[submodule "/home/caleb/.vim/pack/plugins/start/rust.vim"]
+	path = pack/plugins/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim
