@@ -151,9 +151,6 @@
 [submodule "bundle/airline-themes"]
 	path = pack/plugins/start/airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "pack/plugins/start/vim-go"]
-	path = pack/plugins/start/vim-go
-	url = https://github.com/fatih/vim-go
 [submodule "pack/plugins/start/rhubarb"]
 	path = pack/plugins/start/rhubarb
 	url = https://github.com/tpope/vim-rhubarb
@@ -163,3 +160,6 @@
 [submodule "pack/plugins/start/dirvish"]
 	path = pack/plugins/start/dirvish
 	url = https://github.com/justinmk/vim-dirvish
+[submodule "pack/plugins/start/govim"]
+	path = pack/plugins/start/govim
+	url = https://github.com/myitcv/govim.git
