@@ -330,6 +330,7 @@ augroup go
   au FileType go,asm setlocal ts=8
   au FileType go,asm setlocal sw=8
 augroup END
+let g:go_highlight_trailing_whitespace_error = 0
 
 " Markdown settings
 augroup markdown
