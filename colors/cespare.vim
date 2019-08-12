@@ -56,7 +56,7 @@ hi CursorLine   ctermfg=NONE  ctermbg=238   guifg=NONE    guibg=#444444
 hi Visual       ctermfg=NONE  ctermbg=24    guifg=NONE    guibg=#005f87
 hi Title        ctermfg=74    ctermbg=NONE guifg=#5fafd7 guibg=NONE
 hi Todo         ctermfg=185   ctermbg=NONE  guifg=#d7d75f guibg=NONE
-hi Pmenu        ctermfg=NONE  ctermbg=249   guifg=bg      guibg=#b2b2b2
+hi Pmenu        ctermfg=NONE  ctermbg=235   guifg=fg      guibg=#262626
 hi PmenuSel     ctermfg=NONE  ctermbg=24    guifg=fg      guibg=#005f87
 hi PmenuSbar    ctermfg=249   ctermbg=252   guifg=#b2b2b2 guibg=#d0d0d0
 hi PmenuThumb   ctermfg=NONE  ctermbg=244   guifg=fg      guibg=#808080
