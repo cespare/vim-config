@@ -327,6 +327,7 @@ call govim#config#Set("QuickfixSignsDisable", 1)
 "   those as well.
 augroup go
   au!
+  au FileType go,asm setlocal noexpandtab
   au FileType go,asm setlocal ts=8
   au FileType go,asm setlocal sw=8
 augroup END
