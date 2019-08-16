@@ -1,0 +1,3 @@
+The go*.vim files are all copied from https://github.com/fatih/vim-go.
+The actual go syntax file (go.vim) is not included; I just use Vim's built-in
+Go syntax.

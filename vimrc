@@ -40,9 +40,12 @@ if exists("&ballooneval")
   set noballooneval " annoying
 endif
 set noshowcmd
+" Govim recommendations
+set updatetime=500
+set balloondelay=250
 
-" When completing, don't automatically select the first choice, but instead just insert the longest common
-" text.
+" When completing, don't automatically select the first choice, but instead just
+" insert the longest common text.
 set completeopt=menu,longest
 
 " See stuff in .vim/after/plugins/endwise.vim for some more completion settings that necessarily must be
@@ -219,6 +222,16 @@ function! SynStack()
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
+" After running a command which alters the quickfix window, this function is
+" useful for opening the window (if it's non-empty) and focus the first result.
+function! FocusQuickfix()
+  cwindow
+  if len(getqflist()) > 0
+    cfirst
+  endif
+endfunction
+command! FocusQuickfix call FocusQuickfix()
+
 " }}}
 " ------------------------------------------ My Mappings ------------------------------------------------ {{{
 " Quickly un-highlight search terms
@@ -273,27 +286,16 @@ nnoremap Q gqap
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-" Go (vim-go) shortcuts and settings
-augroup go_shortcuts
-  au!
-  au FileType go nmap <leader>gi <Plug>(go-info)
-  au FileType go nmap <leader>gd <Plug>(go-doc)
-  au FileType go nmap <leader>gr <Plug>(go-rename)
-  au FileType go nmap <leader>gb <Plug>(go-build)
-  au FileType go nmap <leader>gt <Plug>(go-test)
-  au FileType go nmap <leader>gf <Plug>(go-test-func)
-  au FileType go nmap <leader>gc <Plug>(go-coverage-toggle)
-augroup END
-let g:go_def_mode = "gopls"
-let g:go_info_mode = "gopls"
-let g:go_search_bin_path_first = 0
-let g:go_fmt_command = "goimports"
-let g:go_fmt_options = "-local liftoff/"
-let g:go_highlight_format_strings = 0
-let g:go_list_type="quickfix"
-" I'm using a more general mechanism for this
-let g:go_highlight_trailing_whitespace_error = 0
-let g:go_template_autocreate = 0
+" Go shortcuts
+nnoremap <leader>gi : <C-u>call GOVIMHover()<CR>
+nnoremap <leader>gr :GOVIMRename<CR>
+nnoremap <leader>gd :GOVIMQuickfixDiagnostics<CR> :FocusQuickfix<CR>
+
+" TODO:
+" nnoremap <leader>gb <Plug>(go-build)
+" nnoremap <leader>gt <Plug>(go-test)
+" nnoremap <leader>gf <Plug>(go-test-func)
+" nnoremap <leader>gc <Plug>(go-coverage-toggle)
 
 " I usually want to evaluate the outermost s-expr in Clojure. This is often more handy than cpp (evaluate
 " current expr).
@@ -307,15 +309,29 @@ nnoremap <leader>gg :!go run %<cr>
 " Nice ruby settings
 let ruby_space_settings = 1
 
-" Go-specific settings
+" Go (+govim) shortcuts and settings
+" Docs here: https://godoc.org/github.com/myitcv/govim/cmd/govim/config
+packadd govim
+" Disable automatic population of quickfix.
+call govim#config#Set("QuickfixAutoDiagnosticsDisable", 1)
+" Disable showing signs in the gutter (I find this disruptive).
+call govim#config#Set("QuickfixSignsDisable", 1)
+" TODO:
+" - Send the appropriate -local flag to gopls (https://github.com/golang/go/issues/32049)
+" - Make govim use the gopls from my path (https://github.com/myitcv/govim/issues/440)
+" - Add a shortcut for doing all of the following at once:
+"   * Run GOVIMQuickfixDiagnostics
+"   * If the quickfix window is populated, open it and jump to the first item
+"   * If the quickfix window is not populated, close it
+"   Once there is a command for running go test etc, add similar shortcuts for
+"   those as well.
 augroup go
   au!
-  au FileType go,asm setlocal textwidth=80
-  au FileType go,asm setlocal wrapmargin=80
-  au FileType go,asm setlocal colorcolumn=80
+  au FileType go,asm setlocal noexpandtab
   au FileType go,asm setlocal ts=8
   au FileType go,asm setlocal sw=8
 augroup END
+let g:go_highlight_trailing_whitespace_error = 0
 
 " Rust settings
 let g:rustfmt_autosave = 1
