@@ -34,9 +34,6 @@
 [submodule "bundle/autotag"]
 	path = pack/plugins/start/autotag
 	url = https://github.com/vim-scripts/AutoTag.git
-[submodule "bundle/cespare-snippets"]
-	path = pack/plugins/start/cespare-snippets
-	url = git@github.com:cespare/cespare-snippets.git
 [submodule "bundle/vidir-ls"]
 	path = pack/plugins/start/vidir-ls
 	url = https://github.com/trapd00r/vim-syntax-vidir-ls.git
