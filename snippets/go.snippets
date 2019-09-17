@@ -1,0 +1,39 @@
+version 1
+snippet deb debug print
+	fmt.Printf(">>>> ${1:var}: %v\\n", $1)$0
+snippet debc blue debug print
+	fmt.Printf("\\033[01;34m>>>> ${1:var}: %v\\x1B[m\\n", $1)$0
+snippet handle http.HandleFunc
+	func ${1:Name}(w http.ResponseWriter, r *http.Request) {$0
+snippet er check error and return
+	if err != nil {
+		return $1
+	}
+snippet ef check error and log.Fatal
+	if err != nil {
+		log.Fatal(err)
+	}
+snippet efln check error and log.Fatalln
+	if err != nil {
+		log.Fatalln("${1:message}", err)
+	}
+snippet eff check error and log.Fatalf
+	if err != nil {
+		log.Fatalf("${1:message}", err)
+	}
+snippet gof
+	go func() {
+		$0
+	}()
+snippet tf check error and t.Fatal
+	if err != nil {
+		t.Fatal(err)
+	}
+snippet tff check error and t.Fatalf
+	if err != nil {
+		t.Fatalf("${1:message}", err)
+	}
+snippet wantgot
+	if ${1:want} != ${2:got} {
+		t.Fatalf("want %v; got %v", $1, $2)
+	}
