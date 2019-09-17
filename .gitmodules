@@ -106,9 +106,6 @@
 [submodule "bundle/glsl"]
 	path = pack/plugins/start/glsl
 	url = https://github.com/tikhomirov/vim-glsl.git
-[submodule "bundle/snipmate"]
-	path = pack/plugins/start/snipmate
-	url = https://github.com/garbas/vim-snipmate.git
 [submodule "bundle/tlib"]
 	path = pack/plugins/start/tlib
 	url = https://github.com/tomtom/tlib_vim.git
@@ -166,3 +163,6 @@
 [submodule "pack/plugins/start/lastplace"]
 	path = pack/plugins/start/lastplace
 	url = https://github.com/farmergreg/vim-lastplace
+[submodule "pack/plugins/start/snipmate"]
+	path = pack/plugins/start/snipmate
+	url = https://github.com/garbas/vim-snipmate.git
