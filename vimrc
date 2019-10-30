@@ -138,8 +138,8 @@ nnoremap <leader>gu :GundoToggle<cr>
 nnoremap ; :Buffers<CR>
 nnoremap <leader>d :Files<CR>
 
-" ag (via ack.vim):
-let g:ackprg = 'ag --vimgrep'
+" rg (via ack.vim):
+let g:ackprg = 'rg --vimgrep'
 nnoremap <leader>a :Ack! 
 
 " Insertlessly settings
