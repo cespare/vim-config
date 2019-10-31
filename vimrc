@@ -1,8 +1,7 @@
 " Some settings are OS-dependent
 let s:uname = system("echo -n \"$(uname)\"")
 
-" }}}
-" ----------------------------------------- Basic Settings ---------------------------------------------- {{{
+" ---------------------------- Basic Settings ------------------------------ {{{
 syntax on
 filetype plugin indent on
 
@@ -48,11 +47,14 @@ set balloondelay=250
 " insert the longest common text.
 set completeopt=menu,longest
 
-" See stuff in .vim/after/plugins/endwise.vim for some more completion settings that necessarily must be
-" loaded after endwise. (https://github.com/tpope/vim-endwise/pull/16)
-" TODO: Get around this; it's better to have all configuration in this file or in plugins directly.
+" See stuff in .vim/after/plugins/endwise.vim for some more completion settings
+" that necessarily must be loaded after endwise.
+" (https://github.com/tpope/vim-endwise/pull/16)
+" TODO: Get around this; it's better to have all configuration in this file or
+" in plugins directly.
 
-" Leaving foldmethod=syntax on all the time causes horrible slowdowns for some syntaxes in gvim.
+" Leaving foldmethod=syntax on all the time causes horrible slowdowns for some
+" syntaxes in gvim.
 set foldmethod=manual
 set foldlevel=99
 " TODO(caleb): Investigate and implement a workaround such as those listed here:
@@ -67,8 +69,8 @@ let mapleader = ","
 set vb
 set t_vb=
 
-" For some reason I accidentally hit this shortcut all the time...let's disable it. (I usually don't look at
-" man pages from within vim anyway.)
+" For some reason I accidentally hit this shortcut all the time, so disable it.
+" I usually don't look at man pages from within vim anyway.
 noremap K <Nop>
 
 " Disable ctrl-a; I press this accidentally because of tmux all the time.
@@ -111,7 +113,7 @@ set sessionoptions-=buffers
 set viminfo='1000,f1,<500,:100,/100,h
 
 " }}}
-" ----------------------------- Colorscheme Settings ---------------------------------------------------- {{{
+" --------------------------- Colorscheme Settings ------------------------- {{{
 set t_Co=256
 colorscheme cespare
 
@@ -128,7 +130,7 @@ augroup highlight_whitespace
 augroup END
 
 " }}}
-" -------------------------------------- Plugin-specific Settings --------------------------------------- {{{
+" ------------------------ Plugin-specific Settings ------------------------ {{{
 
 " Gundo settings
 let g:gundo_prefer_python3 = 1
@@ -145,8 +147,8 @@ nnoremap <leader>a :Ack!
 " Insertlessly settings
 " I nmap space to :
 let g:insertlessly_insert_spaces = 0
-" I don't like deleting newlines when leaving insert mode (and I use DeleteTrailingWhitespace to do the whole
-" file).
+" I don't like deleting newlines when leaving insert mode (and I use
+" DeleteTrailingWhitespace to do the whole file).
 let g:insertlessly_cleanup_trailing_ws = 0
 let g:insertlessly_cleanup_all_ws = 0
 
@@ -165,7 +167,7 @@ let g:airline_section_warning = ''
 let g:airline#extensions#wordcount#enabled = 0
 
 " }}}
-" ---------------------------------- Custom Commands and Functions -------------------------------------- {{{
+" ---------------------- Custom Commands and Functions --------------------- {{{
 " A function to delete all trailing whitespace from a file. (From
 " http://vimcasts.org/episodes/tidying-whitespace/)
 function! <SID>DeleteTrailingWhitespace()
@@ -227,14 +229,15 @@ endfunction
 command! FocusQuickfix call FocusQuickfix()
 
 " }}}
-" ------------------------------------------ My Mappings ------------------------------------------------ {{{
+" ------------------------------- My Mappings ------------------------------ {{{
 " Quickly un-highlight search terms
 noremap <leader>nn :noh<cr>
 
 " Quickly delete trailing whitespace (with cursor position restore)
 nnoremap <leader>$ :call <SID>DeleteTrailingWhitespace()<cr>
 
-" Make Y be like C and D (yank to end of line), a mapping so obvious it's recommended by :help Y
+" Make Y be like C and D (yank to end of line), a mapping so obvious it's
+" recommended by :help Y.
 nnoremap Y y$
 
 " Shortcuts for creating splits
@@ -291,15 +294,15 @@ nnoremap <leader>gd :GOVIMQuickfixDiagnostics<CR> :FocusQuickfix<CR>
 " nnoremap <leader>gf <Plug>(go-test-func)
 " nnoremap <leader>gc <Plug>(go-coverage-toggle)
 
-" I usually want to evaluate the outermost s-expr in Clojure. This is often more handy than cpp (evaluate
-" current expr).
+" I usually want to evaluate the outermost s-expr in Clojure. This is often more
+" handy than cpp (evaluate current expr).
 nnoremap cpo :Eval<cr>
 
 " Quickly 'go run' the current file. Good for little scratch programs.
 nnoremap <leader>gg :!go run %<cr>
 
 " }}}
-" ------------------------------------ Language-specific Settings --------------------------------------- {{{
+" ------------------------- Language-specific Settings --------------------- {{{
 " Nice ruby settings
 let ruby_space_settings = 1
 
