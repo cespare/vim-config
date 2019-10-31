@@ -166,3 +166,6 @@
 [submodule "pack/plugins/start/snipmate"]
 	path = pack/plugins/start/snipmate
 	url = https://github.com/garbas/vim-snipmate.git
+[submodule "pack/plugins/start/eunuch"]
+	path = pack/plugins/start/eunuch
+	url = git@github.com:tpope/vim-eunuch.git
