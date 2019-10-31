@@ -303,10 +303,10 @@ nnoremap <leader>gg :!go run %<cr>
 
 " }}}
 " ------------------------- Language-specific Settings --------------------- {{{
-" Nice ruby settings
+" Ruby
 let ruby_space_settings = 1
 
-" Go (+govim) shortcuts and settings
+" Go (+govim)
 " Docs here: https://godoc.org/github.com/myitcv/govim/cmd/govim/config
 packadd govim
 " Disable automatic population of quickfix.
@@ -330,16 +330,16 @@ augroup go
 augroup END
 let g:go_highlight_trailing_whitespace_error = 0
 
-" Rust settings
+" Rust
 let g:rustfmt_autosave = 1
 
-" Markdown settings
+" Markdown
 augroup markdown
   au!
   au FileType markdown setlocal comments=b:*,b:-,b:+,n:>h
 augroup END
 
-" Vimscript settings
+" Vimscript
 augroup filetype_vim
   au!
   au FileType vim setlocal foldmethod=marker
@@ -351,10 +351,7 @@ augroup gitcommit
   au FileType gitcommit setlocal textwidth=72
 augroup END
 
-" Coffeescript settings (related to vim-coffee-script plugin)
-vnoremap <leader>co :CoffeeCompile<cr>
-
-" Clojure settings
+" Clojure
 augroup clojure
   au!
   au FileType clojure setlocal textwidth=110
@@ -372,7 +369,7 @@ let g:clojure_fuzzy_indent_patterns .= ",up,down"                             " 
 let g:clojure_fuzzy_indent_patterns .= ",entity"                              " Custom
 let g:clojure_fuzzy_indent_patterns .= ",check"                               " Custom
 
-" Nimrod settings
+" Nimrod
 fun! JumpToDef()
   if exists("*GotoDefinition_" . &filetype)
     call GotoDefinition_{&filetype}()
@@ -382,3 +379,9 @@ fun! JumpToDef()
 endf
 nn <M-g> :call JumpToDef()<cr>
 ino <M-g> <esc>:call JumpToDef()<cr>i
+
+" JSON
+" Override weird highlighting.
+hi def link jsonKeyword String
+" Turn off disruptive error highlighting.
+let g:vim_json_warnings = 0
