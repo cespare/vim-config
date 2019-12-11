@@ -94,9 +94,6 @@
 [submodule "bundle/keepcase"]
 	path = pack/plugins/start/keepcase
 	url = https://github.com/vim-scripts/keepcase.vim.git
-[submodule "bundle/rust"]
-	path = pack/plugins/start/rust
-	url = https://github.com/wting/rust.vim.git
 [submodule "bundle/yaml"]
 	path = pack/plugins/start/yaml
 	url = git@github.com:ingydotnet/yaml-vim.git
@@ -154,9 +151,6 @@
 [submodule "pack/plugins/start/dirvish"]
 	path = pack/plugins/start/dirvish
 	url = https://github.com/justinmk/vim-dirvish
-[submodule "/home/caleb/.vim/pack/plugins/start/rust.vim"]
-	path = pack/plugins/start/rust.vim
-	url = https://github.com/rust-lang/rust.vim
 [submodule "pack/plugins/start/govim"]
 	path = pack/plugins/start/govim
 	url = https://github.com/myitcv/govim.git
@@ -169,3 +163,6 @@
 [submodule "pack/plugins/start/eunuch"]
 	path = pack/plugins/start/eunuch
 	url = git@github.com:tpope/vim-eunuch.git
+[submodule "pack/plugins/start/rust"]
+	path = pack/plugins/start/rust
+	url = https://github.com/rust-lang/rust.vim
