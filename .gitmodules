@@ -153,7 +153,7 @@
 	url = https://github.com/justinmk/vim-dirvish
 [submodule "pack/plugins/start/govim"]
 	path = pack/plugins/start/govim
-	url = https://github.com/myitcv/govim.git
+	url = git@github.com:cespare/govim.git
 [submodule "pack/plugins/start/lastplace"]
 	path = pack/plugins/start/lastplace
 	url = https://github.com/farmergreg/vim-lastplace
