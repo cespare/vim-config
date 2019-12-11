@@ -324,9 +324,9 @@ call govim#config#Set("QuickfixSigns", 0)
 "   those as well.
 augroup go
   au!
-  au FileType go,asm setlocal noexpandtab
-  au FileType go,asm setlocal ts=8
-  au FileType go,asm setlocal sw=8
+  au FileType go,asm,gomod setlocal noexpandtab
+  au FileType go,asm,gomod setlocal ts=8
+  au FileType go,asm,gomod setlocal sw=8
 augroup END
 let g:go_highlight_trailing_whitespace_error = 0
 
