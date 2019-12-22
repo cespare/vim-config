@@ -309,10 +309,11 @@ let ruby_space_settings = 1
 " Go (+govim)
 " Docs here: https://godoc.org/github.com/myitcv/govim/cmd/govim/config
 packadd govim
-" Disable automatic population of quickfix.
+" Disable a bunch of spammy/disruptive/colorful stuff that's on by default in
+" govim.
 call govim#config#Set("QuickfixAutoDiagnostics", 0)
-" Disable showing signs in the gutter (I find this disruptive).
 call govim#config#Set("QuickfixSigns", 0)
+call govim#config#Set("HighlightDiagnostics", 0)
 " TODO:
 " - Send the appropriate -local flag to gopls (https://github.com/golang/go/issues/32049)
 " - Make govim use the gopls from my path (https://github.com/myitcv/govim/issues/440)
