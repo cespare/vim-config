@@ -155,10 +155,6 @@ let g:insertlessly_cleanup_all_ws = 0
 " easy-align settings
 vnoremap <leader>a :EasyAlign<Enter>
 
-" Scratch (github.com/matth/scratch.vim)
-let g:scratch_top = 0
-let g:scratch_height = 25
-
 " Airline
 let g:airline_theme = 'minimalist'
 let g:airline_section_z='%3p%% • %l/%L • %v'
