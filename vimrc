@@ -281,6 +281,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Go shortcuts
 nnoremap <leader>gi : <C-u>call GOVIMHover()<CR>
+nnoremap <leader>gh :GOVIMHighlightReferences<CR>
 nnoremap <leader>gr :GOVIMRename<CR>
 nnoremap <leader>gd :GOVIMQuickfixDiagnostics<CR> :FocusQuickfix<CR>
 
@@ -310,6 +311,7 @@ packadd govim
 call govim#config#Set("QuickfixAutoDiagnostics", 0)
 call govim#config#Set("QuickfixSigns", 0)
 call govim#config#Set("HighlightDiagnostics", 0)
+call govim#config#Set("HighlightReferences", 0)
 " TODO:
 " - Send the appropriate -local flag to gopls (https://github.com/golang/go/issues/32049)
 " - Make govim use the gopls from my path (https://github.com/myitcv/govim/issues/440)
