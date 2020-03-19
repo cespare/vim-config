@@ -224,6 +224,32 @@ function! FocusQuickfix()
 endfunction
 command! FocusQuickfix call FocusQuickfix()
 
+" Fix the handy gx command by implementing it ourselves. (Seems to be utterly
+" broken due to a netrw bug: https://github.com/vim/vim/issues/4738.)
+function! OpenURL(url)
+  echo a:url
+  if a:url == ""
+    echo "No URL found"
+  else
+    " TODO: support non-Linux.
+    silent! exec "!(xdg-open ".shellescape(a:url, 1)." &) >/dev/null 2>&1"
+    redraw!
+  endif
+endfunction
+function! OpenURLUnderCursor()
+  " TODO: We want the url under the cursor, but that's not easy to do.
+  " For now, just find the first URL on the line. Few lines have multiple URLs.
+  " TODO: Improve regex.
+  let url = matchstr(getline("."), 'https\?:\/\/[^ >,;)]*')
+  call OpenURL(url)
+endfunction
+nnoremap gx :call OpenURLUnderCursor()<CR>
+function! OpenURLVisual()
+  let url = getline(".")[col("'<")-1:col("'>")-1]
+  call OpenURL(url)
+endfunction
+vnoremap gx :call OpenURLVisual()<CR>
+
 " }}}
 " ------------------------------- My Mappings ------------------------------ {{{
 " Quickly un-highlight search terms
