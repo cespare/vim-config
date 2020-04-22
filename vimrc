@@ -112,6 +112,9 @@ set sessionoptions-=buffers
 " h      Disable hlsearch when starting
 set viminfo='1000,f1,<500,:100,/100,h
 
+" Make split divisions look nicer.
+set fillchars+=vert:\ 
+
 " }}}
 " --------------------------- Colorscheme Settings ------------------------- {{{
 set t_Co=256
