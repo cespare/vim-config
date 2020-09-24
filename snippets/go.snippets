@@ -13,6 +13,10 @@ snippet ef check error and log.Fatal
 	if err != nil {
 		log.Fatal(err)
 	}
+snippet ep check error and panic
+	if err != nil {
+		panic(err)
+	}
 snippet efln check error and log.Fatalln
 	if err != nil {
 		log.Fatalln("${1:message}", err)
