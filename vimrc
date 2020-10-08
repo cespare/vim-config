@@ -256,7 +256,7 @@ vnoremap gx :call OpenURLVisual()<CR>
 " }}}
 " ------------------------------- My Mappings ------------------------------ {{{
 " Quickly un-highlight search terms
-noremap <leader>nn :noh<cr>
+noremap <leader>nn :GOVIMClearReferencesHighlights<CR>:noh<CR>
 
 " Quickly delete trailing whitespace (with cursor position restore)
 nnoremap <leader>$ :call <SID>DeleteTrailingWhitespace()<cr>
@@ -311,6 +311,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 " Go shortcuts
 nnoremap <leader>gi : <C-u>call GOVIMHover()<CR>
 nnoremap <leader>gh :GOVIMHighlightReferences<CR>
+nnoremap <leader>gf :GOVIMReferences<CR>
 nnoremap <leader>gr :GOVIMRename<CR>
 nnoremap <leader>gd :GOVIMQuickfixDiagnostics<CR> :FocusQuickfix<CR>
 
