@@ -118,9 +118,6 @@
 [submodule "bundle/markdown"]
 	path = pack/plugins/start/markdown
 	url = https://github.com/tpope/vim-markdown
-[submodule "bundle/bufexplorer"]
-	path = pack/plugins/start/bufexplorer
-	url = https://github.com/jlanzarotta/bufexplorer
 [submodule "bundle/protobuf"]
 	path = pack/plugins/start/protobuf
 	url = https://github.com/uarun/vim-protobuf
