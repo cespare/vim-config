@@ -243,7 +243,7 @@ function! OpenURLUnderCursor()
   " TODO: We want the url under the cursor, but that's not easy to do.
   " For now, just find the first URL on the line. Few lines have multiple URLs.
   " TODO: Improve regex.
-  let url = matchstr(getline("."), 'https\?:\/\/[^ >,;)]*')
+  let url = matchstr(getline("."), 'https\?:\/\/[^ <>"\\^`{|}]*[^ <>"\\^`{|}.):;]\+')
   call OpenURL(url)
 endfunction
 nnoremap gx :call OpenURLUnderCursor()<CR>
